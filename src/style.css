@@ -1,0 +1,6273 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    line-height: 1;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    font-size: 0;
+    text-align: center;
+    margin: 50rem 0;
+}
+
+h1 {
+    display: inline-block;
+    font-family: Bangers, cursive;
+    font-size: 70rem;
+    font-weight: bold;
+    padding: 0 25rem;
+    margin: 20rem 0 30rem 0;
+    border-bottom: solid 7rem #000;
+}
+
+h1 span {
+    font-size: .65em;
+}
+
+#hero {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 30rem;
+    width: 300rem;
+    height: 300rem;
+    z-index: 1;
+    background: #bfc4d2;
+    text-align: left;
+    border: solid 1rem #7d87a4;
+    box-shadow: inset 0 0 10rem 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4rem;
+}
+
+#hero *,
+#hero *:before,
+#hero *:after {
+    transition: all 0.14s cubic-bezier(0.13, 1, 0.44, 0.81);
+}
+
+#hero header {
+    position: absolute;
+}
+
+#hero main {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 26rem;
+    width: 100%;
+}
+
+#hero main:before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 44rem 113rem 144rem 0;
+}
+
+#hero main:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 44rem 0 144rem 113rem;
+}
+
+#hero.batman header {
+    background: #000;
+    width: 56rem;
+    height: 66rem;
+    top: 32rem;
+    left: 50%;
+    margin-left: -28rem;
+    border-top-left-radius: 30rem 28rem;
+    border-top-right-radius: 30rem 28rem;
+}
+
+#hero.batman header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -3rem;
+    margin-left: -28rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 16rem 25rem 3rem;
+}
+
+#hero.batman header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -3rem;
+    margin-left: 9rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 3rem 25rem 16rem;
+}
+
+#hero.batman header div:nth-child(1) {
+    position: absolute;
+    width: 62rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -31rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 4rem 50rem 4rem;
+}
+
+#hero.batman header div:nth-child(2) {
+    position: absolute;
+    width: 48rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -24rem;
+    margin-bottom: -3rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 19rem 4rem 0 4rem;
+}
+
+#hero.batman header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -20rem;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 8rem 26rem 0 26rem;
+}
+
+#hero.batman header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    width: 40rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -20rem;
+    margin-bottom: -11rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 11rem 13rem 0 13rem;
+}
+
+#hero.batman header div:nth-child(3) {
+    position: absolute;
+    top: 31rem;
+    left: 5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 9rem 12rem 0 10rem;
+}
+
+#hero.batman header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    top: -10rem;
+    left: -9rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 5rem 0 0 22rem;
+    -webkit-animation: batman-blink 2s infinite alternate ease-out;
+    animation: batman-blink 2s infinite alternate ease-out;
+}
+
+#hero.batman header div:nth-child(4) {
+    position: absolute;
+    top: 31rem;
+    right: 5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 9rem 12rem 0 10rem;
+}
+
+#hero.batman header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    top: -10rem;
+    right: -10rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 5rem 22rem 0 0;
+    -webkit-animation: batman-blink 2s infinite alternate ease-out;
+    animation: batman-blink 2s infinite alternate ease-out;
+}
+
+#hero.batman main:before {
+    border-right-color: #000;
+}
+
+#hero.batman main:after {
+    border-left-color: #000;
+}
+
+#hero.batman main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    margin-left: -70rem;
+    border-style: solid;
+    border-color: transparent #352f3a transparent transparent;
+    border-width: 44rem 70rem 90rem 0;
+}
+
+#hero.batman main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #352f3a;
+    border-width: 44rem 0 90rem 70rem;
+}
+
+#hero.batman main div:nth-child(2) {
+    position: absolute;
+    background: #000;
+    overflow: hidden;
+    z-index: 1;
+    width: 70rem;
+    height: 24rem;
+    left: 50%;
+    margin-top: -99rem;
+    margin-left: -35rem;
+}
+
+#hero.batman main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: transparent;
+    width: 70rem;
+    height: 70rem;
+    top: -70rem;
+    left: 0;
+    border-radius: 30rem / 15rem;
+    box-shadow: -33rem 84rem 0 0 #352f3a, -60rem 68rem 0 0 #352f3a, 33rem 84rem 0 0 #352f3a, 60rem 68rem 0 0 #352f3a;
+}
+
+#hero.batman main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: transparent;
+    width: 12rem;
+    height: 6rem;
+    top: -6rem;
+    left: 0;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    box-shadow: 23rem 6rem 0 0 #352f3a, 35rem 6rem 0 0 #352f3a, 29rem 5rem 0 -2rem #352f3a;
+}
+
+@-webkit-keyframes batman-blink {
+    80%,
+    100% {
+        border-top-width: 10rem;
+    }
+}
+
+@keyframes batman-blink {
+    80%,
+    100% {
+        border-top-width: 10rem;
+    }
+}
+
+#hero.joker header {
+    background: #ccc;
+    width: 56rem;
+    height: 48rem;
+    top: 52rem;
+    left: 50%;
+    margin-left: -28rem;
+}
+
+#hero.joker header:before {
+    content: " ";
+    position: absolute;
+    background: #ccc;
+    z-index: 1;
+    width: 68rem;
+    height: 16rem;
+    top: 18rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.joker header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 56rem;
+    top: 100%;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+    border-width: 25rem 19rem 0 19rem;
+}
+
+#hero.joker header div:nth-child(1) {
+    position: absolute;
+    background: #00770e;
+    width: 76rem;
+    height: 52rem;
+    top: -35rem;
+    left: 50%;
+    margin-left: -38rem;
+    border-bottom-left-radius: 15rem 47rem;
+    border-bottom-right-radius: 15rem 47rem;
+}
+
+#hero.joker header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #bfc4d2;
+    width: 76rem;
+    height: 8rem;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 10rem 8rem;
+    border-bottom-right-radius: 10rem 8rem;
+}
+
+#hero.joker header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #00770e;
+    width: 62rem;
+    height: 13rem;
+    top: 4px;
+    left: 6px;
+    border-top-left-radius: 38rem 12rem;
+    border-top-right-radius: 38rem 12rem;
+}
+
+#hero.joker header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #ccc;
+    width: 28rem;
+    height: 32rem;
+    top: -15rem;
+    left: 0;
+    border-top-left-radius: 9rem 14rem;
+    border-top-right-radius: 19rem 14rem;
+}
+
+#hero.joker header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #ccc;
+    width: 28rem;
+    height: 32rem;
+    top: -15rem;
+    left: 50%;
+    border-top-left-radius: 19rem 14rem;
+    border-top-right-radius: 9rem 14rem;
+}
+
+#hero.joker header div:nth-child(3) {
+    position: absolute;
+    background: #ffeca5;
+    z-index: 3;
+    width: 48rem;
+    height: 28rem;
+    top: 31rem;
+    left: 50%;
+    margin-left: -24rem;
+    border: solid 2rem #d11124;
+    border-bottom-width: 3rem;
+    border-bottom-left-radius: 19rem 30rem;
+    border-bottom-right-radius: 19rem 30rem;
+}
+
+#hero.joker header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #ccc;
+    z-index: 1;
+    width: 46rem;
+    height: 14rem;
+    top: -4px;
+    left: 50%;
+    margin-left: -23rem;
+    border-bottom: solid 2rem #d11124;
+    border-bottom-left-radius: 22rem 18rem;
+    border-bottom-right-radius: 22rem 18rem;
+}
+
+#hero.joker header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    top: 5rem;
+    left: 50%;
+    margin-left: -7rem;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+    border-width: 11rem 7rem 0 7rem;
+}
+
+#hero.joker header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 15rem;
+    top: 8rem;
+    right: 50%;
+    margin-right: 4rem;
+    border-top-left-radius: 6rem 17rem;
+    border-top-right-radius: 16rem 17rem;
+    box-shadow: inset 2rem -3rem 0 0 #ccc, inset 1rem 2rem 0 0 #00770e;
+}
+
+#hero.joker header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 15rem;
+    top: 8rem;
+    left: 50%;
+    margin-left: 4rem;
+    border-top-left-radius: 16rem 17rem;
+    border-top-right-radius: 6rem 17rem;
+    box-shadow: inset -2rem -3rem 0 0 #ccc, inset -1rem 2rem 0 0 #00770e;
+}
+
+#hero.joker main:before {
+    border-right-color: #460186;
+}
+
+#hero.joker main:after {
+    border-left-color: #460186;
+}
+
+#hero.joker main div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #ffaa00 transparent transparent transparent;
+    border-width: 179rem 29rem 0 29rem;
+}
+
+#hero.joker main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 118rem;
+    top: 0;
+    left: 50%;
+    margin-top: -175rem;
+    margin-left: -59rem;
+    border-style: solid;
+    border-color: transparent transparent #460186 transparent;
+    border-width: 0 2rem 10rem 2rem;
+}
+
+#hero.joker main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 114rem;
+    top: 0;
+    left: 50%;
+    margin-top: -193rem;
+    margin-left: -57rem;
+    border-style: solid;
+    border-color: transparent transparent #460186 transparent;
+    border-width: 0 57rem 18rem 57rem;
+}
+
+#hero.joker main div:nth-child(3) {
+    position: absolute;
+    background: #00770e;
+    z-index: 3;
+    width: 8rem;
+    height: 8rem;
+    top: 0;
+    left: 50%;
+    margin-top: -142rem;
+    margin-left: -4rem;
+    border-radius: 50%;
+    box-shadow: 39rem 10rem 0 8rem #00770e;
+}
+
+#hero.joker main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 40rem;
+    height: 11rem;
+    margin-top: -1rem;
+    margin-left: -20rem;
+    border-style: solid;
+    border-color: transparent #00770e;
+    border-width: 3rem 18rem 6rem 19rem;
+}
+
+#hero.gambit header {
+    width: 62rem;
+    height: 45rem;
+    top: 62rem;
+    left: 50%;
+    margin-left: -31rem;
+    border-style: solid;
+    border-color: #242c8f transparent transparent transparent;
+    border-width: 45rem 6rem 0 6rem;
+}
+
+#hero.gambit header:before {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: 1;
+    width: 48rem;
+    height: 25rem;
+    top: 0;
+    left: 50%;
+    margin-top: -39rem;
+    margin-left: -24rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.gambit header:after {
+    content: " ";
+    position: absolute;
+    background: #242c8f;
+    z-index: 1;
+    width: 48rem;
+    height: 4rem;
+    top: 0;
+    left: 50%;
+    margin-top: -39rem;
+    margin-left: -24rem;
+    border-bottom-left-radius: 24rem 5rem;
+    border-bottom-right-radius: 24rem 5rem;
+}
+
+#hero.gambit header div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 34rem;
+    left: 50%;
+    margin-top: -15rem;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: transparent transparent #ffaa77 transparent;
+    border-width: 0 1rem 22rem 1rem;
+}
+
+#hero.gambit header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 34rem;
+    left: 50%;
+    margin-top: 22rem;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 9rem 7rem 0 7rem;
+}
+
+#hero.gambit header div:nth-child(2) {
+    position: absolute;
+    background: #ffaa77;
+    z-index: -1;
+    width: 68rem;
+    height: 16rem;
+    top: -33rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.gambit header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 15rem;
+    height: 5rem;
+    top: -26rem;
+    left: 5rem;
+    border-top-right-radius: 15rem 2rem;
+    border-bottom-left-radius: 10rem 5rem;
+    border-bottom-right-radius: 5rem 3rem;
+}
+
+#hero.gambit header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 15rem;
+    height: 5rem;
+    top: -26rem;
+    right: 5rem;
+    border-top-left-radius: 15rem 2rem;
+    border-bottom-left-radius: 5rem 3rem;
+    border-bottom-right-radius: 10rem 5rem;
+}
+
+#hero.gambit header div:nth-child(4) {
+    position: absolute;
+    z-index: 2;
+    width: 36rem;
+    height: 35rem;
+    top: -45rem;
+    left: -12rem;
+    border-top-left-radius: 30px 38px;
+    border-top-right-radius: 4px 5px;
+    box-shadow: 0 -13rem 0 0 #742f03;
+}
+
+#hero.gambit header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 32rem;
+    height: 25rem;
+    top: 0rem;
+    left: 36rem;
+    border-top-left-radius: 4rem 5rem;
+    border-top-right-radius: 21rem 16rem;
+    box-shadow: 0 -13rem 0 0 #742f03;
+}
+
+#hero.gambit header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 71rem;
+    height: 55rem;
+    top: -25rem;
+    left: -6rem;
+    border-top-left-radius: 41rem 40rem;
+    border-top-right-radius: 36rem 25rem;
+    border-top: solid 17rem #742f03;
+}
+
+#hero.gambit header div:nth-child(5) {
+    position: absolute;
+    z-index: 2;
+    width: 36rem;
+    height: 25rem;
+    top: -47rem;
+    left: -14rem;
+    border-top-left-radius: 30px 14px;
+    box-shadow: 0 -13rem 0 0 #742f03;
+}
+
+#hero.gambit header div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 51rem;
+    height: 13rem;
+    top: -19rem;
+    left: 46rem;
+    border-top-left-radius: 66rem 40rem;
+    border-top-right-radius: 36rem 25rem;
+    border-left: solid 17rem #742f03;
+}
+
+#hero.gambit main:before {
+    border-right-color: #cc6611;
+}
+
+#hero.gambit main:after {
+    border-left-color: #cc6611;
+}
+
+#hero.gambit main div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 94rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -47rem;
+    border-style: solid;
+    border-color: #a91276 transparent transparent transparent;
+    border-width: 160rem 47rem 0 47rem;
+}
+
+#hero.gambit main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 86rem;
+    top: 0;
+    left: 50%;
+    margin-top: -163rem;
+    margin-left: -43rem;
+    border-style: solid;
+    border-color: #597fe5 transparent transparent transparent;
+    border-width: 31rem 22rem 0 22rem;
+}
+
+#hero.gambit main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 84rem;
+    top: 0;
+    left: 50%;
+    margin-top: -169rem;
+    margin-left: -42rem;
+    border-style: solid;
+    border-color: #242c8f transparent transparent transparent;
+    border-width: 32rem 24rem 0 24rem;
+}
+
+#hero.gambit main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 118rem;
+    top: 0;
+    left: 50%;
+    margin-top: -175rem;
+    margin-left: -59rem;
+    border-style: solid;
+    border-color: #cc6611 transparent transparent transparent;
+    border-width: 8rem 5rem 0 5rem;
+}
+
+#hero.gambit main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 118rem;
+    top: 0;
+    left: 50%;
+    margin-top: -186rem;
+    margin-left: -59rem;
+    border-style: solid;
+    border-color: transparent transparent #cc6611 transparent;
+    border-width: 0 59rem 11rem 59rem;
+}
+
+#hero.gambit main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    top: 0;
+    left: 50%;
+    margin-top: -170rem;
+    margin-left: -50rem;
+    border-style: solid;
+    border-color: #cc6611 transparent transparent transparent;
+    border-width: 28rem 28rem 0 0;
+}
+
+#hero.gambit main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    top: 0;
+    right: 50%;
+    margin-top: -170rem;
+    margin-right: -50rem;
+    border-style: solid;
+    border-color: #cc6611 transparent transparent transparent;
+    border-width: 28rem 0 0 28rem;
+}
+
+#hero.gambit main div:nth-child(4) {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    margin-top: -130rem;
+    margin-left: 41rem;
+    border-radius: 2rem;
+    transform: rotateZ(15deg);
+}
+
+#hero.gambit main div:nth-child(4):before {
+    content: " ";
+    background: #fff;
+    display: block;
+    width: 21rem;
+    height: 29rem;
+    box-shadow: inset 0 -2rem 0 8rem #fff, inset 0 4rem 0 8rem #fff, inset 0 0 0 21rem #ff1800;
+}
+
+#hero.gambit main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    border-style: solid;
+    border-color: transparent transparent #cc6611 transparent;
+    border-width: 0 0 9rem 26rem;
+}
+
+#hero.magneto header {
+    background: #ff1800;
+    width: 68rem;
+    height: 101rem;
+    top: 17rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 34rem;
+    border-top-right-radius: 34rem;
+    border-bottom-left-radius: 35rem 31rem;
+    border-bottom-right-radius: 35rem 31rem;
+}
+
+#hero.magneto header div:nth-child(1) {
+    position: absolute;
+    background: #460186;
+    z-index: 1;
+    width: 18rem;
+    height: 42rem;
+    top: 59rem;
+    left: 50%;
+    margin-left: -9rem;
+}
+
+#hero.magneto header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #460186;
+    z-index: 1;
+    width: 30rem;
+    height: 26rem;
+    top: -26rem;
+    right: 50%;
+    border-top-left-radius: 10rem 13rem;
+    border-top-right-radius: 20rem 13rem;
+    border-bottom-left-radius: 14rem 13rem;
+}
+
+#hero.magneto header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #460186;
+    z-index: 1;
+    width: 30rem;
+    height: 26rem;
+    top: -26rem;
+    left: 50%;
+    border-top-left-radius: 20rem 13rem;
+    border-top-right-radius: 10rem 13rem;
+    border-bottom-right-radius: 14rem 13rem;
+}
+
+#hero.magneto header div:nth-child(2) {
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 12rem;
+    height: 42rem;
+    top: 56rem;
+    left: 50%;
+    margin-left: -6rem;
+}
+
+#hero.magneto header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 27rem;
+    height: 20rem;
+    top: -20rem;
+    right: 50%;
+    border-top-left-radius: 10rem 13rem;
+    border-top-right-radius: 20rem 13rem;
+    border-bottom-left-radius: 14rem 13rem;
+}
+
+#hero.magneto header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 27rem;
+    height: 20rem;
+    top: -20rem;
+    left: 50%;
+    border-top-left-radius: 20rem 13rem;
+    border-top-right-radius: 10rem 13rem;
+    border-bottom-right-radius: 14rem 13rem;
+}
+
+#hero.magneto header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 11rem;
+    height: 6rem;
+    top: 45rem;
+    right: 50%;
+    margin-right: 8rem;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+#hero.magneto header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 11rem;
+    height: 6rem;
+    top: 45rem;
+    left: 50%;
+    margin-left: 8rem;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+#hero.magneto header div:nth-child(4) {
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 15rem;
+    top: 14rem;
+    left: 50%;
+    margin-left: -15rem;
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    border-bottom: solid 6rem #460186;
+}
+
+#hero.magneto header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    background: #460186;
+    z-index: 1;
+    width: 4rem;
+    height: 13rem;
+    top: 5rem;
+    left: 50%;
+    margin-left: -2rem;
+    border-radius: 50%;
+}
+
+#hero.magneto main:before {
+    border-right-color: #ff1800;
+}
+
+#hero.magneto main:after {
+    border-left-color: #ff1800;
+}
+
+#hero.magneto main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    margin-top: -179rem;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent #460186 transparent transparent;
+    border-width: 35rem 34rem 15rem 0;
+}
+
+#hero.magneto main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 50%;
+    margin-top: -179rem;
+    margin-right: -113rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #460186;
+    border-width: 35rem 0 15rem 35rem;
+}
+
+#hero.magneto main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    margin-top: -179rem;
+    margin-left: -79rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #460186;
+    border-width: 21rem 0 29rem 46rem;
+}
+
+#hero.magneto main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 50%;
+    margin-top: -179rem;
+    margin-right: -78rem;
+    border-style: solid;
+    border-color: transparent #460186 transparent transparent;
+    border-width: 21rem 46rem 29rem 0;
+}
+
+#hero.magneto main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    margin-top: -192rem;
+    margin-left: -90rem;
+    border-style: solid;
+    border-color: transparent #460186 transparent transparent;
+    border-width: 42rem 77rem 18rem 0;
+}
+
+#hero.magneto main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 50%;
+    margin-top: -192rem;
+    margin-right: -90rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #460186;
+    border-width: 42rem 0 18rem 77rem;
+}
+
+#hero.magneto main div:nth-child(4) {
+    position: absolute;
+    background: #460186;
+    z-index: 1;
+    width: 28rem;
+    height: 77rem;
+    top: 0;
+    left: 50%;
+    margin-top: -199rem;
+    margin-left: -14rem;
+}
+
+#hero.wolverine header {
+    background: #ffee00;
+    width: 60rem;
+    height: 60rem;
+    top: 36rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-bottom: solid 17rem #ffaa77;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+}
+
+#hero.wolverine header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    top: 100%;
+    margin-top: 16rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 22rem 21rem 0 21rem;
+}
+
+#hero.wolverine header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: #ffee00 transparent transparent transparent;
+    border-width: 13rem 26rem 0 26rem;
+}
+
+#hero.wolverine header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 52rem;
+    top: 100%;
+    left: 50%;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: transparent #000 transparent #000;
+    border-width: 10rem 12rem 10rem 12rem;
+}
+
+#hero.wolverine header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    height: 22rem;
+    top: 100%;
+    left: 50%;
+    margin-top: -12rem;
+    margin-left: -30rem;
+    border-style: solid;
+    border-color: #000 #000 transparent transparent;
+    border-width: 13rem 4rem 4rem 0;
+}
+
+#hero.wolverine header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    height: 22rem;
+    top: 100%;
+    right: 50%;
+    margin-top: -12rem;
+    margin-right: -30rem;
+    border-style: solid;
+    border-color: #000 transparent transparent #000;
+    border-width: 13rem 0 4rem 4rem;
+}
+
+#hero.wolverine header div:nth-child(2) {
+    position: absolute;
+    background: #000;
+    z-index: 2;
+    width: 40rem;
+    height: 30rem;
+    top: 25rem;
+    right: 50%;
+    margin-right: -1rem;
+    border-top-right-radius: 26rem;
+    transform: rotateZ(27deg);
+    transform-origin: right center;
+}
+
+#hero.wolverine header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 7rem 5rem 0;
+}
+
+#hero.wolverine header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 40rem;
+    height: 30rem;
+    top: -4rem;
+    left: -17rem;
+    border-left: solid 30rem #000;
+    border-top-left-radius: 47rem 22rem;
+    transform: rotateZ(-85deg);
+}
+
+#hero.wolverine header div:nth-child(3) {
+    position: absolute;
+    background: #000;
+    z-index: 2;
+    width: 40rem;
+    height: 30rem;
+    top: 25rem;
+    left: 50%;
+    margin-right: -1rem;
+    border-top-left-radius: 26rem;
+    transform: rotateZ(-27deg);
+    transform-origin: left center;
+}
+
+#hero.wolverine header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 100%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 0 5rem 7rem;
+}
+
+#hero.wolverine header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 40rem;
+    height: 30rem;
+    top: -4rem;
+    right: -17rem;
+    border-right: solid 30rem #000;
+    border-top-right-radius: 47rem 22rem;
+    transform: rotateZ(85deg);
+}
+
+#hero.wolverine header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 9rem;
+    height: 4rem;
+    top: 36rem;
+    right: 50%;
+    margin-right: 10rem;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transform: rotateZ(7deg);
+}
+
+#hero.wolverine header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 9rem;
+    height: 4rem;
+    top: 36rem;
+    left: 50%;
+    margin-left: 10rem;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transform: rotateZ(-7deg);
+}
+
+#hero.wolverine main:before {
+    border-right-color: #ffee00;
+}
+
+#hero.wolverine main:after {
+    border-left-color: #ffee00;
+}
+
+#hero.wolverine main div:nth-child(1) {
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 42rem;
+    height: 42rem;
+    left: 50%;
+    bottom: 95rem;
+    margin-left: -21rem;
+    border-radius: 50%;
+    border: solid 5rem #ffee00;
+    box-shadow: 0 0 0 1rem #ff1800;
+}
+
+#hero.wolverine main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #ffee00;
+    z-index: 1;
+    width: 32rem;
+    height: 6rem;
+    top: 50%;
+    left: 0;
+    margin-top: -3rem;
+    transform: rotateZ(-45deg);
+}
+
+#hero.wolverine main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #ffee00;
+    z-index: 1;
+    width: 32rem;
+    height: 6rem;
+    top: 50%;
+    left: 0;
+    margin-top: -3rem;
+    transform: rotateZ(45deg);
+}
+
+#hero.wolverine main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 63rem;
+    margin-left: -68rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 11rem 32rem 0 18rem;
+    transform: rotateZ(19deg);
+}
+
+#hero.wolverine main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 63rem;
+    margin-right: -68rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 11rem 18rem 0 32rem;
+    transform: rotateZ(-19deg);
+}
+
+#hero.wolverine main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 44rem;
+    margin-left: -50rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 9rem 24rem 0 16rem;
+    transform: rotateZ(20deg);
+}
+
+#hero.wolverine main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 44rem;
+    margin-right: -50rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 9rem 16rem 0 24rem;
+    transform: rotateZ(-20deg);
+}
+
+#hero.wolverine main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 27rem;
+    margin-left: -32rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 6rem 17rem 0 12rem;
+    transform: rotateZ(20deg);
+}
+
+#hero.wolverine main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 27rem;
+    margin-right: -32rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 6rem 12rem 0 17rem;
+    transform: rotateZ(-20deg);
+}
+
+#hero.wolverine main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 124rem;
+    margin-left: -49rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 45rem 4rem 0 6rem;
+    transform: rotateZ(-23deg);
+}
+
+#hero.wolverine main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 124rem;
+    margin-right: -49rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 45rem 6rem 0 4rem;
+    transform: rotateZ(23deg);
+}
+
+#hero.wolverine main div:nth-child(6) {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 98rem;
+    margin-left: -122rem;
+    border-style: solid;
+    border-color: transparent #0d50c4 transparent transparent;
+    border-width: 20rem 54rem 50rem 0;
+    transform: rotateZ(9deg);
+}
+
+#hero.wolverine main div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    bottom: 6px;
+    border-style: solid;
+    border-color: #0d50c4 transparent transparent transparent;
+    border-width: 8rem 58rem 0 0;
+    transform: rotateZ(-14deg);
+}
+
+#hero.wolverine main div:nth-child(7) {
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 98rem;
+    margin-right: -122rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #0d50c4;
+    border-width: 20rem 0 50rem 54rem;
+    transform: rotateZ(-9deg);
+}
+
+#hero.wolverine main div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    bottom: 6px;
+    border-style: solid;
+    border-color: #0d50c4 transparent transparent transparent;
+    border-width: 8rem 0 0 58rem;
+    transform: rotateZ(14deg);
+}
+
+#hero.cyclops header {
+    width: 58rem;
+    height: 50rem;
+    top: 48rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top: solid 38rem #ffaa77;
+    border-bottom: solid 12rem #0d50c4;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+}
+
+#hero.cyclops header:before {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 64rem;
+    height: 16rem;
+    top: -16rem;
+    left: 50%;
+    margin-left: -32rem;
+    border: solid 4rem #ffcc00;
+    border-radius: 2rem;
+    box-shadow: inset 0 -1rem 0 0 #991100, inset 4rem 0 0 0 #ff1800, inset 7rem 0 0 0 #fff;
+}
+
+#hero.cyclops header:after {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: 1;
+    width: 40rem;
+    height: 23rem;
+    top: 0;
+    left: 50%;
+    margin-left: -20rem;
+}
+
+#hero.cyclops header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 40rem;
+    height: 0;
+    top: 23rem;
+    left: 50%;
+    margin-left: -20rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 10rem 10rem 0 10rem;
+}
+
+#hero.cyclops header div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    height: 40rem;
+    top: -56rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top: solid 20rem #550000;
+    border-left: solid 5rem #550000;
+    border-right: solid 5rem #550000;
+    border-top-left-radius: 30rem 30rem;
+    border-top-right-radius: 30rem 30rem;
+}
+
+#hero.cyclops header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 18rem;
+    top: -21rem;
+    left: 23rem;
+    border-bottom: solid 14rem #550000;
+    border-bottom-right-radius: 22rem 18rem;
+}
+
+#hero.cyclops header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    height: 18rem;
+    top: -16rem;
+    left: 39rem;
+    border-left: solid 10rem #550000;
+    border-top-left-radius: 22rem 18rem;
+}
+
+#hero.cyclops header div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    height: 18rem;
+    top: -43rem;
+    left: 32rem;
+    border-left: solid 8rem #550000;
+    border-bottom-left-radius: 22rem 18rem;
+}
+
+#hero.cyclops header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    height: 18rem;
+    top: -9rem;
+    left: -36rem;
+    border-right: solid 10rem #550000;
+    border-top-right-radius: 22rem 18rem;
+}
+
+#hero.cyclops header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #550000;
+    z-index: 1;
+    width: 18rem;
+    height: 12rem;
+    top: -2rem;
+    left: -24rem;
+    border-radius: 50%;
+}
+
+#hero.cyclops main:before {
+    border-right-color: #0d50c4;
+}
+
+#hero.cyclops main:after {
+    border-left-color: #0d50c4;
+}
+
+#hero.cyclops main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    height: 166rem;
+    top: -176rem;
+    left: 50%;
+    margin-left: 19rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffcc00;
+    border-width: 4rem 0 25rem 15rem;
+    transform: rotateZ(7deg);
+}
+
+#hero.cyclops main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    height: 110rem;
+    top: -15rem;
+    left: -61rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffcc00;
+    border-width: 10rem 0 0 15rem;
+    transform: rotateZ(-62deg);
+}
+
+#hero.cyclops main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #ffcc00;
+    z-index: 1;
+    width: 46rem;
+    height: 46rem;
+    top: 33rem;
+    left: -30rem;
+    border: solid 2rem #ff1800;
+    border-radius: 50%;
+}
+
+#hero.cyclops main div:nth-child(2) {
+    position: absolute;
+    background: #ff1800;
+    overflow: hidden;
+    z-index: 1;
+    width: 30rem;
+    height: 30rem;
+    left: 50%;
+    bottom: 101rem;
+    margin-left: 15rem;
+    border-radius: 50%;
+}
+
+#hero.cyclops main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 30rem;
+    height: 6rem;
+    top: 50%;
+    left: 0;
+    margin-top: -3rem;
+    transform: rotateZ(-45deg);
+}
+
+#hero.cyclops main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 30rem;
+    height: 6rem;
+    top: 50%;
+    left: 0;
+    margin-top: -3rem;
+    transform: rotateZ(45deg);
+}
+
+#hero.hulk header {
+    background: #339911;
+    width: 62rem;
+    height: 55rem;
+    top: 32rem;
+    left: 50%;
+    margin-left: -31rem;
+    border-top-left-radius: 31rem;
+    border-top-right-radius: 31rem;
+    border-top: solid 10rem #1d1216;
+}
+
+#hero.hulk header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 106rem;
+    top: 0;
+    left: 50%;
+    margin-top: 45rem;
+    margin-left: -53rem;
+    border-style: solid;
+    border-color: transparent transparent #339911 transparent;
+    border-width: 0 22rem 20rem 22rem;
+}
+
+#hero.hulk header:after {
+    content: " ";
+    position: absolute;
+    background: #339911;
+    z-index: -1;
+    width: 72rem;
+    height: 16rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -36rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 6rem;
+    border-bottom-right-radius: 12rem 6rem;
+}
+
+#hero.hulk header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 42rem;
+    top: 50rem;
+    left: 50%;
+    margin-left: -21rem;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 5rem 20rem 5rem;
+}
+
+#hero.hulk header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 9rem;
+    left: -3rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #000;
+    border-width: 1rem 0 1rem 8rem;
+}
+
+#hero.hulk header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 9rem;
+    right: -3rem;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    border-width: 1rem 8rem 1rem 0;
+}
+
+#hero.hulk header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 9rem;
+    height: 5rem;
+    top: 32rem;
+    left: 11rem;
+    border-top-right-radius: 9rem 5rem;
+    border-bottom-left-radius: 9rem;
+    border-bottom-right-radius: 6rem 4rem;
+}
+
+#hero.hulk header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 28rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #000;
+    border-width: 5rem 0 0 21rem;
+    transform: rotateZ(15deg);
+}
+
+#hero.hulk header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 9rem;
+    height: 5rem;
+    top: 32rem;
+    right: 11rem;
+    border-top-left-radius: 9rem 5rem;
+    border-bottom-left-radius: 6rem 4rem;
+    border-bottom-right-radius: 9rem;
+}
+
+#hero.hulk header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 28rem;
+    right: 50%;
+    margin-right: -24rem;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    border-width: 5rem 21rem 0 0;
+    transform: rotateZ(-15deg);
+}
+
+#hero.hulk header div:nth-child(4) {
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 13rem;
+    top: -4rem;
+    left: 8rem;
+    border-top-left-radius: 11rem 13rem;
+    border-top-right-radius: 11rem 13rem;
+    border-top: solid 6rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    height: 20rem;
+    top: -8rem;
+    left: 19rem;
+    border-top-right-radius: 11rem 16rem;
+    border-top: solid 10rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 14rem;
+    height: 20rem;
+    top: -6rem;
+    left: 29rem;
+    border-top-right-radius: 11rem 16rem;
+    border-top: solid 9rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(5) {
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    height: 27rem;
+    top: -8rem;
+    left: 11rem;
+    border-top-left-radius: 11rem 20rem;
+    border-top: solid 11rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 32rem;
+    height: 8rem;
+    top: -10rem;
+    left: -23rem;
+    border-top-right-radius: 32rem 18rem;
+    border-right: solid 12rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 32rem;
+    height: 8rem;
+    top: -15rem;
+    left: -16rem;
+    border-top-right-radius: 38rem 23rem;
+    border-right: solid 12rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(6) {
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 18rem;
+    top: -16rem;
+    left: 19rem;
+    border-bottom-right-radius: 22rem 18rem;
+    border-bottom: solid 11rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 18rem;
+    top: 0;
+    left: 15rem;
+    border-bottom-right-radius: 22rem 18rem;
+    border-bottom: solid 11rem #1d1216;
+}
+
+#hero.hulk header div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 17rem;
+    height: 18rem;
+    top: 4rem;
+    left: 26rem;
+    border-bottom-right-radius: 20rem 18rem;
+    border-bottom: solid 11rem #1d1216;
+}
+
+#hero.hulk main:before {
+    border-right-color: #339911;
+}
+
+#hero.hulk main:after {
+    border-left-color: #339911;
+}
+
+#hero.hulk main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 83rem;
+    margin-left: -61rem;
+    border-style: solid;
+    border-color: #357622 #357622 transparent #357622;
+    border-width: 60rem 61rem 10rem 61rem;
+}
+
+#hero.hulk main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: -9rem;
+    border-style: solid;
+    border-color: #339911 #339911 transparent transparent;
+    border-width: 67rem 61rem 12rem 2rem;
+}
+
+#hero.hulk main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: -9rem;
+    border-style: solid;
+    border-color: #339911 transparent transparent #339911;
+    border-width: 67rem 2rem 12rem 61rem;
+}
+
+#hero.hulk main div:nth-child(2) {
+    position: absolute;
+    background: #357622;
+    z-index: 1;
+    width: 28rem;
+    height: 68rem;
+    left: 50%;
+    bottom: 21rem;
+    margin-left: -14rem;
+}
+
+#hero.hulk main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 15rem;
+    top: 0;
+    left: -1rem;
+    border-style: solid;
+    border-color: transparent #339911 transparent #339911;
+    border-width: 0 14rem 2rem 14rem;
+}
+
+#hero.hulk main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 15rem;
+    top: 14rem;
+    left: -1rem;
+    border-style: solid;
+    border-color: transparent #339911 transparent #339911;
+    border-width: 2rem 14rem 2rem 14rem;
+}
+
+#hero.hulk main div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 15rem;
+    left: 50%;
+    bottom: 46rem;
+    margin-left: -15rem;
+    border-style: solid;
+    border-color: transparent #339911 transparent #339911;
+    border-width: 2rem 14rem 2rem 14rem;
+}
+
+#hero.hulk main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 15rem;
+    top: 12rem;
+    left: -14rem;
+    border-style: solid;
+    border-color: transparent #339911 transparent #339911;
+    border-width: 2rem 14rem 2rem 14rem;
+}
+
+#hero.hulk main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 28rem;
+    height: 15rem;
+    top: 26rem;
+    left: -13rem;
+    border-style: solid;
+    border-color: transparent #339911 transparent #339911;
+    border-width: 2rem 14rem 2rem 14rem;
+}
+
+#hero.superman header {
+    background: #ffaa77;
+    width: 60rem;
+    height: 62rem;
+    top: 40rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 27rem;
+    border-top-right-radius: 27rem;
+    border-top: solid 12rem #1d1216;
+}
+
+#hero.superman header:before {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: -1;
+    width: 70rem;
+    height: 16rem;
+    top: 20rem;
+    left: 50%;
+    margin-left: -35rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.superman header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -20rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 20rem 20rem 0 20rem;
+}
+
+#hero.superman header div:nth-child(1) {
+    position: absolute;
+    background: #1d1216;
+    z-index: 1;
+    width: 26rem;
+    height: 6rem;
+    left: 6rem;
+    border-bottom-left-radius: 13rem 6rem;
+    border-bottom-right-radius: 13rem 6rem;
+}
+
+#hero.superman header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 10rem;
+    height: 16rem;
+    top: -7rem;
+    left: 23rem;
+    border-right: solid 9rem #1d1216;
+    border-bottom-right-radius: 10rem 16rem;
+}
+
+#hero.superman header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 18rem;
+    right: 50%;
+    margin-right: 3rem;
+    border-top-right-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.superman header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 6rem 0 3rem;
+}
+
+#hero.superman header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 18rem;
+    left: 50%;
+    margin-left: 3rem;
+    border-top-left-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.superman header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    right: 50%;
+    margin-right: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 3rem 0 6rem;
+}
+
+#hero.superman main:before {
+    border-top-width: 42rem;
+    border-right-color: #0d50c4;
+}
+
+#hero.superman main:after {
+    border-top-width: 42rem;
+    border-left-color: #0d50c4;
+}
+
+#hero.superman main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 226rem;
+    left: 50%;
+    bottom: 143rem;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #ff1800 transparent;
+    border-width: 0 55rem 31rem 55rem;
+}
+
+#hero.superman main div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 104rem;
+    left: 50%;
+    bottom: 102rem;
+    margin-left: -52rem;
+    border-style: solid;
+    border-color: transparent transparent #ff1800 transparent;
+    border-width: 0 18rem 21rem 18rem;
+}
+
+#hero.superman main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 21rem;
+    left: 50%;
+    margin-left: -52rem;
+    border-style: solid;
+    border-color: #ff1800 transparent transparent transparent;
+    border-width: 55rem 52rem 0 52rem;
+}
+
+#hero.superman main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 21rem;
+    left: 50%;
+    margin-left: -45rem;
+    border-style: solid;
+    border-color: #ffee00 transparent transparent transparent;
+    border-width: 46rem 45rem 0 45rem;
+}
+
+#hero.superman main div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 90rem;
+    left: 50%;
+    bottom: 102rem;
+    margin-left: -45rem;
+    border-style: solid;
+    border-color: transparent transparent #ffee00 transparent;
+    border-width: 0 14rem 16rem 14rem;
+}
+
+#hero.superman main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 80rem;
+    top: -56rem;
+    left: 50%;
+    margin-left: -40rem;
+    border-style: solid;
+    border-color: #ff6f3a transparent transparent transparent;
+    border-width: 31rem 20rem 0 20rem;
+}
+
+#hero.superman main div:nth-child(3):after {
+    content: "S";
+    position: absolute;
+    z-index: 1;
+    top: -13rem;
+    left: 10rem;
+    font-size: 80rem;
+    font-family: serif;
+    font-weight: bold;
+    color: #ff1800;
+}
+
+#hero.superman main div:nth-child(4) {
+    position: absolute;
+    z-index: 1;
+    top: -181rem;
+    left: 50%;
+    margin-left: -52rem;
+    border-style: solid;
+    border-color: transparent transparent #ff1800 transparent;
+    border-width: 0 52rem 7rem 52rem;
+}
+
+#hero.superman main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -157rem;
+    left: 50%;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #0d50c4 transparent;
+    border-width: 0 31rem 14rem 82rem;
+}
+
+#hero.superman main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -157rem;
+    right: 50%;
+    margin-right: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #0d50c4 transparent;
+    border-width: 0 82rem 14rem 31rem;
+}
+
+#hero.lex-luthor header {
+    position: absolute;
+    background: #ffaa77;
+    width: 58rem;
+    height: 66rem;
+    top: 32rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem;
+    border-top-right-radius: 29rem;
+}
+
+#hero.lex-luthor header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 58rem;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -20rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 20rem 16rem 0 16rem;
+}
+
+#hero.lex-luthor header:after {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: -1;
+    width: 68rem;
+    height: 16rem;
+    top: 36rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.lex-luthor header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 34rem;
+    right: 50%;
+    margin-right: 3rem;
+    border-top-right-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.lex-luthor header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 34rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 6rem 0 3rem;
+}
+
+#hero.lex-luthor header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 34rem;
+    left: 50%;
+    margin-left: 3rem;
+    border-top-left-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.lex-luthor header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 34rem;
+    right: 50%;
+    margin-right: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 3rem 0 6rem;
+}
+
+#hero.lex-luthor main:before {
+    border-right-color: #4b1058;
+}
+
+#hero.lex-luthor main:after {
+    border-left-color: #4b1058;
+}
+
+#hero.lex-luthor main div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 176rem 29rem 0 29rem;
+}
+
+#hero.lex-luthor main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -14rem;
+    border-style: solid;
+    border-color: #829d83 transparent transparent transparent;
+    border-width: 83rem 14rem 0 14rem;
+}
+
+#hero.lex-luthor main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left: 50%;
+    bottom: 123rem;
+    margin-left: 28rem;
+    border-style: solid;
+    border-color: #33881b transparent transparent #33881b;
+    border-width: 4rem 4rem 0 24rem;
+}
+
+#hero.lex-luthor main div:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    left: 50%;
+    bottom: 143rem;
+    margin-left: -8rem;
+    border-style: solid;
+    border-color: #33881b transparent transparent transparent;
+    border-width: 8rem 8rem 0 8rem;
+}
+
+#hero.lex-luthor main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 16rem;
+    top: -2rem;
+    left: 50%;
+    margin-left: -8rem;
+    border-style: solid;
+    border-color: transparent transparent #33881b transparent;
+    border-width: 0 6rem 68rem 6rem;
+}
+
+#hero.lex-luthor main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 16rem;
+    top: 66rem;
+    left: 50%;
+    margin-left: -8rem;
+    border-style: solid;
+    border-color: #33881b transparent transparent transparent;
+    border-width: 8rem 8rem 0 8rem;
+}
+
+#hero.captain-america header {
+    position: absolute;
+    background: #0d50c4;
+    width: 60rem;
+    height: 70rem;
+    top: 28rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 30rem 37rem;
+    border-top-right-radius: 30rem 37rem;
+}
+
+#hero.captain-america header:before {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: -1;
+    width: 70rem;
+    height: 16rem;
+    top: 41rem;
+    left: 50%;
+    margin-left: -35rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.captain-america header:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 74rem;
+    height: 30rem;
+    top: 12rem;
+    left: 50%;
+    margin-left: -37rem;
+    border-bottom-left-radius: 21rem;
+    border-bottom-right-radius: 21rem;
+    border-bottom: solid 13rem #fff;
+}
+
+#hero.captain-america header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 14rem;
+    height: 16rem;
+    top: 15rem;
+    left: 50%;
+    margin-left: -7rem;
+    border-top: solid 10rem #fff;
+    border-bottom: solid 2rem #fff;
+}
+
+#hero.captain-america header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -10rem;
+    left: -9rem;
+    border-style: solid;
+    border-color: transparent #fff #fff transparent;
+    border-width: 0 2rem 22rem 10rem;
+}
+
+#hero.captain-america header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -10rem;
+    right: -9rem;
+    border-style: solid;
+    border-color: transparent transparent #fff #fff;
+    border-width: 0 10rem 22rem 2rem;
+}
+
+#hero.captain-america header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: 1;
+    width: 19rem;
+    height: 12rem;
+    top: 45rem;
+    left: 7rem;
+    border-top-left-radius: 4rem 3rem;
+    border-top-right-radius: 15rem 10rem;
+    border-bottom-left-radius: 9rem 6rem;
+    border-bottom-right-radius: 10rem 2rem;
+}
+
+#hero.captain-america header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: 1;
+    width: 19rem;
+    height: 12rem;
+    top: 45rem;
+    right: 7rem;
+    border-top-left-radius: 15rem 10rem;
+    border-top-right-radius: 4rem 3rem;
+    border-bottom-left-radius: 10rem 2rem;
+    border-bottom-right-radius: 9rem 6rem;
+}
+
+#hero.captain-america header div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 50rem;
+    left: 50%;
+    bottom: -23rem;
+    margin-left: -25rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 14rem 16rem 0 16rem;
+}
+
+#hero.captain-america header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 50rem;
+    top: -33rem;
+    left: 50%;
+    margin-left: -25rem;
+    border-style: solid;
+    border-color: transparent transparent #ffaa77 transparent;
+    border-width: 0 2rem 19rem 2rem;
+}
+
+#hero.captain-america header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 50rem;
+    top: -36rem;
+    left: 50%;
+    margin-left: -25rem;
+    border-style: solid;
+    border-color: #0d50c4 #0d50c4 transparent #0d50c4;
+    border-width: 6rem 23rem 6rem 23rem;
+}
+
+#hero.captain-america main:before {
+    border-right-color: #0d50c4;
+}
+
+#hero.captain-america main:after {
+    border-left-color: #0d50c4;
+}
+
+#hero.captain-america main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    margin-left: -42rem;
+    border-style: solid;
+    border-color: #ff1800 transparent transparent transparent;
+    border-width: 54rem 42rem 0 42rem;
+}
+
+#hero.captain-america main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: -30rem;
+    bottom: 12rem;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    border-width: 16rem 20rem 26rem 0;
+}
+
+#hero.captain-america main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: -30rem;
+    bottom: 12rem;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-width: 16rem 0 26rem 20rem;
+}
+
+#hero.captain-america main div:nth-child(2) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 82rem;
+    height: 82rem;
+    left: 50%;
+    bottom: 62rem;
+    margin-left: -41rem;
+    overflow: hidden;
+}
+
+#hero.captain-america main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: transparent transparent #0d50c4 transparent;
+    border-width: 0 26rem 14rem 26rem;
+}
+
+#hero.captain-america main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -40rem;
+    border-style: solid;
+    border-color: transparent #0d50c4 transparent transparent;
+    border-width: 20rem 21rem 67rem 0;
+}
+
+#hero.captain-america main div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 82rem;
+    height: 82rem;
+    left: 50%;
+    bottom: 62rem;
+    margin-left: -41rem;
+    overflow: hidden;
+}
+
+#hero.captain-america main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -40rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #0d50c4;
+    border-width: 20rem 0 67rem 21rem;
+}
+
+#hero.captain-america main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: #0d50c4 transparent transparent #0d50c4;
+    border-width: 28rem 13rem 5rem 27rem;
+}
+
+#hero.captain-america main div:nth-child(4) {
+    position: absolute;
+    z-index: 1;
+    width: 82rem;
+    height: 82rem;
+    left: 50%;
+    bottom: 62rem;
+    margin-left: -41rem;
+    overflow: hidden;
+}
+
+#hero.captain-america main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-color: #0d50c4 #0d50c4 transparent transparent;
+    border-width: 28rem 27rem 5rem 13rem;
+}
+
+#hero.red-skull header {
+    background: #cc1100;
+    width: 58rem;
+    height: 63rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem;
+    border-top-right-radius: 29rem;
+}
+
+#hero.red-skull header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    top: 100%;
+    left: 50%;
+    margin-left: -30rem;
+    border-style: solid;
+    border-color: #cc1100 transparent transparent transparent;
+    border-width: 22rem 22rem 0 22rem;
+}
+
+#hero.red-skull header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    top: 100%;
+    left: 50%;
+    margin-top: -5rem;
+    margin-left: -30rem;
+    border-style: solid;
+    border-color: transparent transparent #cc1100 transparent;
+    border-width: 0 1rem 5rem 1rem;
+}
+
+#hero.red-skull header div:nth-child(1) {
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 68rem;
+    height: 25rem;
+    top: 15rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 18rem 22rem;
+    border-top-right-radius: 18rem 22rem;
+    border-bottom-left-radius: 4rem 3rem;
+    border-bottom-right-radius: 4rem 3rem;
+}
+
+#hero.red-skull header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 43rem;
+    left: 7rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 4rem 4rem 6rem;
+    border-top-right-radius: 19rem 5rem;
+    border-bottom-left-radius: 13rem 9rem;
+    border-bottom-right-radius: 6rem 4rem;
+}
+
+#hero.red-skull header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 43rem;
+    right: 7rem;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 6rem 4rem 4rem;
+    border-top-left-radius: 19rem 5rem;
+    border-bottom-left-radius: 6rem 4rem;
+    border-bottom-right-radius: 13rem 9rem;
+}
+
+#hero.red-skull header div:nth-child(3) {
+    position: absolute;
+    z-index: 2;
+    width: 46rem;
+    top: 55rem;
+    left: 50%;
+    margin-left: -23rem;
+    border-style: solid;
+    border-color: #550000 transparent transparent transparent;
+    border-width: 6rem 9rem 0 9rem;
+}
+
+#hero.red-skull header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 46rem;
+    top: -7rem;
+    left: 50%;
+    margin-left: -23rem;
+    border-style: solid;
+    border-color: #cc1100 transparent transparent transparent;
+    border-width: 7rem 10rem 0 10rem;
+}
+
+#hero.red-skull header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 14rem;
+    top: -1rem;
+    left: 50%;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: transparent #550000 transparent #550000;
+    border-width: 0 1rem 0 1rem;
+    border-top-left-radius: 5rem 9rem;
+    border-top-right-radius: 5rem 9rem;
+    border-bottom-left-radius: 3rem 5rem;
+    border-bottom-right-radius: 3rem 5rem;
+}
+
+#hero.red-skull header div:nth-child(4) {
+    position: absolute;
+    z-index: 2;
+    top: 57rem;
+    left: 50%;
+    margin-left: -4rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 4rem 7rem 4rem;
+}
+
+#hero.red-skull header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 8rem;
+    height: 2rem;
+    left: -4rem;
+    bottom: -8rem;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+#hero.red-skull main:before {
+    border-right-color: #550000;
+}
+
+#hero.red-skull main:after {
+    border-left-color: #550000;
+}
+
+#hero.red-skull main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 84rem;
+    height: 25rem;
+    left: 50%;
+    bottom: 173rem;
+    margin-left: -42rem;
+    border-style: solid;
+    border-color: #550000 transparent transparent transparent;
+    border-width: 25rem 2rem 0 2rem;
+}
+
+#hero.red-skull main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 32rem;
+    height: 6rem;
+    top: 14rem;
+    left: -57rem;
+    transform: rotateZ(-20deg);
+}
+
+#hero.red-skull main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 32rem;
+    height: 6rem;
+    top: 14rem;
+    right: -57rem;
+    transform: rotateZ(20deg);
+}
+
+#hero.red-skull main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #829d83;
+    z-index: 1;
+    width: 8rem;
+    height: 8rem;
+    left: 50%;
+    bottom: 145rem;
+    margin-left: -45rem;
+    border-radius: 50%;
+    box-shadow: 0 72rem 0 0 #829d83, 0 48rem 0 0 #829d83, 0 24rem 0 0 #829d83;
+}
+
+#hero.red-skull main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #829d83;
+    z-index: 1;
+    width: 8rem;
+    height: 8rem;
+    right: 50%;
+    bottom: 145rem;
+    margin-right: -45rem;
+    border-radius: 50%;
+    box-shadow: 0 72rem 0 0 #829d83, 0 48rem 0 0 #829d83, 0 24rem 0 0 #829d83;
+}
+
+#hero.red-skull main div:nth-child(3) {
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 46rem;
+    height: 46rem;
+    left: 50%;
+    bottom: 70rem;
+    margin-left: -23rem;
+    border-radius: 50%;
+    border: solid 3rem #cc1100;
+}
+
+#hero.red-skull main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 16rem;
+    height: 20rem;
+    top: 6rem;
+    left: 50%;
+    margin-left: -8rem;
+    border-top-left-radius: 8rem 5rem;
+    border-top-right-radius: 8rem 5rem;
+    border-bottom-left-radius: 7rem 15rem;
+    border-bottom-right-radius: 7rem 15rem;
+}
+
+#hero.red-skull main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #cc1100;
+    z-index: 1;
+    width: 10rem;
+    height: 2rem;
+    top: 18rem;
+    left: 50%;
+    margin-left: -5rem;
+    border-left: solid 2rem #000;
+    border-right: solid 2rem #000;
+}
+
+#hero.red-skull main div:nth-child(4):before {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 80rem;
+    margin-left: -15rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(-66deg);
+}
+
+#hero.red-skull main div:nth-child(4):after {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 80rem;
+    margin-right: -14rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(66deg) rotateY(-180deg);
+}
+
+#hero.red-skull main div:nth-child(5):before {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 77rem;
+    margin-left: -14rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(-146deg);
+}
+
+#hero.red-skull main div:nth-child(5):after {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 77rem;
+    margin-right: -14rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(146deg) rotateY(-180deg);
+}
+
+#hero.red-skull main div:nth-child(6):before {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 75rem;
+    margin-left: -12rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(-196deg);
+}
+
+#hero.red-skull main div:nth-child(6):after {
+    content: "?";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 75rem;
+    margin-right: -12rem;
+    font-size: 22rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #cc1100;
+    transform: rotateZ(196deg) rotateY(-180deg);
+}
+
+#hero.spiderman header {
+    background: #d5282b;
+    width: 58rem;
+    height: 68rem;
+    top: 29rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem;
+    border-top-right-radius: 29rem;
+    border-bottom-left-radius: 3rem 19rem;
+    border-bottom-right-radius: 3rem 19rem;
+}
+
+#hero.spiderman header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 58rem;
+    top: 100%;
+    left: 50%;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #bb1100 transparent transparent transparent;
+    border-width: 24rem 16rem 0 16rem;
+}
+
+#hero.spiderman header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 52rem;
+    top: 100%;
+    left: 50%;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: #d5282b transparent transparent transparent;
+    border-width: 21rem 16rem 0 16rem;
+}
+
+#hero.spiderman header div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 50rem;
+    height: 56rem;
+    top: 16rem;
+    left: 50%;
+    margin-left: -25rem;
+    border: solid 1rem #bb1100;
+    border-radius: 26rem / 30rem;
+    box-shadow: inset 0 0 0 8rem #d5282b, inset 0 0 0 9rem #bb1100, inset 0 0 0 18rem #d5282b, inset 0 0 0 19rem #bb1100;
+}
+
+#hero.spiderman header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: 3;
+    width: 1rem;
+    height: 89rem;
+    left: 50%;
+}
+
+#hero.spiderman header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: 3;
+    width: 58rem;
+    height: 1rem;
+    top: 50%;
+    margin-top: 9rem;
+}
+
+#hero.spiderman header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: 3;
+    width: 74rem;
+    height: 1rem;
+    top: 50%;
+    margin-top: 9rem;
+    margin-left: -8rem;
+    transform-origin: 50% 50% 0;
+    transform: rotateZ(-45deg);
+}
+
+#hero.spiderman header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: 3;
+    width: 74rem;
+    height: 1rem;
+    top: 50%;
+    margin-top: 9rem;
+    margin-left: -8rem;
+    transform-origin: 50% 50% 0;
+    transform: rotateZ(45deg);
+}
+
+#hero.spiderman header div:nth-child(4) {
+    position: absolute;
+    z-index: 3;
+    width: 40rem;
+    height: 30rem;
+    top: 23rem;
+    left: -2rem;
+    border-left: solid 16rem #000;
+    border-top-left-radius: 27rem 22rem;
+    transform: rotateZ(-50deg);
+}
+
+#hero.spiderman header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 26rem;
+    top: 2rem;
+    left: -14rem;
+    border-left: solid 12rem #fff;
+    border-top-left-radius: 20rem 22rem;
+}
+
+#hero.spiderman header div:nth-child(5) {
+    position: absolute;
+    z-index: 3;
+    width: 40rem;
+    height: 30rem;
+    top: 23rem;
+    right: -2rem;
+    border-right: solid 16rem #000;
+    border-top-right-radius: 27rem 22rem;
+    transform: rotateZ(50deg);
+}
+
+#hero.spiderman header div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 22rem;
+    height: 26rem;
+    top: 2rem;
+    right: -14rem;
+    border-right: solid 12rem #fff;
+    border-top-right-radius: 20rem 22rem;
+}
+
+#hero.spiderman main:before {
+    border-right-color: #d5282b;
+}
+
+#hero.spiderman main:after {
+    border-left-color: #d5282b;
+}
+
+#hero.spiderman main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    height: 187px;
+    left: 50%;
+    bottom: 1rem;
+    border-left: solid 1rem #bb1100;
+}
+
+#hero.spiderman main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 36rem;
+    height: 183px;
+    left: 50%;
+    bottom: 3rem;
+    margin-left: -18rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 72rem;
+    height: 146px;
+    left: 50%;
+    bottom: 32rem;
+    margin-left: -36rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 108rem;
+    height: 113px;
+    left: 50%;
+    bottom: 58rem;
+    margin-left: -54rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 144rem;
+    height: 78px;
+    left: 50%;
+    bottom: 26px;
+    margin-left: -72rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 180rem;
+    height: 44px;
+    left: 50%;
+    bottom: 52px;
+    margin-left: -90rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(3) {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 216rem;
+    height: 8px;
+    left: 50%;
+    bottom: 138rem;
+    margin-left: -108rem;
+    border-left: solid 1rem #bb1100;
+    border-right: solid 1rem #bb1100;
+    border-top-left-radius: 18rem 79rem;
+    border-top-right-radius: 18rem 79rem;
+    border-bottom-left-radius: 18rem 109rem;
+    border-bottom-right-radius: 18rem 109rem;
+}
+
+#hero.spiderman main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    width: 18rem;
+    height: 3rem;
+    top: -1rem;
+    left: 0;
+    border-bottom-left-radius: 9rem 3rem;
+    border-bottom-right-radius: 9rem 3rem;
+    box-shadow: 98rem 132rem 0 0 #d5282b, 98rem 133rem 0 0 #bb1100, 90rem 114rem 0 0 #d5282b, 90rem 115rem 0 0 #bb1100, 106rem 114rem 0 0 #d5282b, 106rem 115rem 0 0 #bb1100, 90rem 96rem 0 0 #d5282b, 90rem 97rem 0 0 #bb1100, 106rem 96rem 0 0 #d5282b, 106rem 97rem 0 0 #bb1100, 90rem 78rem 0 0 #d5282b, 90rem 79rem 0 0 #bb1100, 106rem 78rem 0 0 #d5282b, 106rem 79rem 0 0 #bb1100, 74rem 77rem 0 0 #d5282b, 74rem 78rem 0 0 #bb1100, 90rem 78rem 0 0 #d5282b, 90rem 79rem 0 0 #bb1100, 106rem 78rem 0 0 #d5282b, 106rem 79rem 0 0 #bb1100, 124rem 77rem 0 0 #d5282b, 124rem 78rem 0 0 #bb1100, 55rem 58rem 0 0 #d5282b, 55rem 59rem 0 0 #bb1100, 74rem 59rem 0 0 #d5282b, 74rem 60rem 0 0 #bb1100, 90rem 60rem 0 0 #d5282b, 90rem 61rem 0 0 #bb1100, 106rem 60rem 0 0 #d5282b, 106rem 61rem 0 0 #bb1100, 124rem 59rem 0 0 #d5282b, 124rem 60rem 0 0 #bb1100, 142rem 58rem 0 0 #d5282b, 142rem 59rem 0 0 #bb1100, 36rem 39rem 0 0 #d5282b, 36rem 40rem 0 0 #bb1100, 55rem 40rem 0 0 #d5282b, 55rem 41rem 0 0 #bb1100, 74rem 41rem 0 0 #d5282b, 74rem 42rem 0 0 #bb1100, 90rem 42rem 0 0 #d5282b, 90rem 43rem 0 0 #bb1100, 106rem 42rem 0 0 #d5282b, 106rem 43rem 0 0 #bb1100, 124rem 41rem 0 0 #d5282b, 124rem 42rem 0 0 #bb1100, 142rem 40rem 0 0 #d5282b, 142rem 41rem 0 0 #bb1100, 160rem 39rem 0 0 #d5282b, 160rem 40rem 0 0 #bb1100, 18rem 20rem 0 0 #d5282b, 18rem 21rem 0 0 #bb1100, 36rem 21rem 0 0 #d5282b, 36rem 22rem 0 0 #bb1100, 55rem 22rem 0 0 #d5282b, 55rem 23rem 0 0 #bb1100, 74rem 23rem 0 0 #d5282b, 74rem 24rem 0 0 #bb1100, 90rem 24rem 0 0 #d5282b, 90rem 25rem 0 0 #bb1100, 106rem 24rem 0 0 #d5282b, 106rem 25rem 0 0 #bb1100, 124rem 23rem 0 0 #d5282b, 124rem 24rem 0 0 #bb1100, 142rem 22rem 0 0 #d5282b, 142rem 23rem 0 0 #bb1100, 160rem 21rem 0 0 #d5282b, 160rem 22rem 0 0 #bb1100, 178rem 20rem 0 0 #d5282b, 178rem 21rem 0 0 #bb1100, 0 1rem 0 0 #d5282b, 0 2rem 0 0 #bb1100, 18rem 2rem 0 0 #d5282b, 18rem 3rem 0 0 #bb1100, 36rem 3rem 0 0 #d5282b, 36rem 4rem 0 0 #bb1100, 55rem 4rem 0 0 #d5282b, 55rem 5rem 0 0 #bb1100, 74rem 5rem 0 0 #d5282b, 74rem 6rem 0 0 #bb1100, 90rem 6rem 0 0 #d5282b, 90rem 7rem 0 0 #bb1100, 106rem 6rem 0 0 #d5282b, 106rem 7rem 0 0 #bb1100, 124rem 5rem 0 0 #d5282b, 124rem 6rem 0 0 #bb1100, 142rem 4rem 0 0 #d5282b, 142rem 5rem 0 0 #bb1100, 160rem 3rem 0 0 #d5282b, 160rem 4rem 0 0 #bb1100, 178rem 2rem 0 0 #d5282b, 178rem 3rem 0 0 #bb1100, 194rem 1rem 0 0 #d5282b, 194rem 2rem 0 0 #bb1100, 40rem -15rem 0 0 #d5282b, 40rem -14rem 0 0 #bb1100, 57rem -14rem 0 0 #d5282b, 57rem -13rem 0 0 #bb1100, 76rem -13rem 0 0 #d5282b, 76rem -12rem 0 0 #bb1100, 92rem -12rem 0 0 #d5282b, 92rem -11rem 0 0 #bb1100, 103rem -12rem 0 0 #d5282b, 103rem -11rem 0 0 #bb1100, 122rem -13rem 0 0 #d5282b, 122rem -12rem 0 0 #bb1100, 140rem -14rem 0 0 #d5282b, 140rem -13rem 0 0 #bb1100, 156rem -15rem 0 0 #d5282b, 156rem -14rem 0 0 #bb1100;
+}
+
+#hero.spiderman main div:nth-child(4) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 142rem;
+    height: 282rem;
+    left: 50%;
+    bottom: -138rem;
+    margin-left: -141rem;
+    border-top-right-radius: 100rem 180rem;
+}
+
+#hero.spiderman main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    border-style: solid;
+    border-color: #0d50c4 #0d50c4 transparent transparent;
+    border-width: 73rem 57rem;
+}
+
+#hero.spiderman main div:nth-child(5) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 142rem;
+    height: 282rem;
+    right: 50%;
+    bottom: -138rem;
+    margin-right: -141rem;
+    border-top-left-radius: 100rem 180rem;
+}
+
+#hero.spiderman main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    border-style: solid;
+    border-color: #0d50c4 transparent transparent #0d50c4;
+    border-width: 73rem 57rem;
+}
+
+#hero.spiderman main div:nth-child(6) {
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 12rem;
+    height: 7rem;
+    left: 50%;
+    bottom: 113rem;
+    margin-left: -6rem;
+    border-radius: 3rem 3rem 2rem 2rem;
+}
+
+#hero.spiderman main div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 8rem;
+    height: 21rem;
+    top: 100%;
+    left: 50%;
+    margin-left: -4rem;
+    border-top-left-radius: 1rem 7rem;
+    border-top-right-radius: 1rem 7rem;
+    border-bottom-left-radius: 4rem 14rem;
+    border-bottom-right-radius: 4rem 14rem;
+}
+
+#hero.spiderman main div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 20rem;
+    top: -17rem;
+    left: 50%;
+    margin-left: -15rem;
+    border-left: solid 1rem #000;
+    border-right: solid 1rem #000;
+    border-bottom: solid 2rem #000;
+    border-top-left-radius: 5rem 12rem;
+    border-top-right-radius: 5rem 12rem;
+    border-bottom-left-radius: 15rem 4rem;
+    border-bottom-right-radius: 15rem 4rem;
+}
+
+#hero.spiderman main div:nth-child(7) {
+    position: absolute;
+    z-index: 1;
+    width: 40rem;
+    height: 26rem;
+    left: 50%;
+    bottom: 116rem;
+    margin-left: -20rem;
+    border-left: solid 1rem #000;
+    border-right: solid 1rem #000;
+    border-bottom: solid 2rem #000;
+    border-top-left-radius: 7rem 14rem;
+    border-top-right-radius: 7rem 14rem;
+    border-bottom-left-radius: 17rem 6rem;
+    border-bottom-right-radius: 17rem 6rem;
+}
+
+#hero.spiderman main div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 36rem;
+    height: 33rem;
+    top: 100%;
+    left: 50%;
+    margin-top: 1rem;
+    margin-left: -18rem;
+    border-top: solid 2rem #000;
+    border-left: solid 1rem #000;
+    border-right: solid 1rem #000;
+    border-top-left-radius: 17rem 6rem;
+    border-top-right-radius: 17rem 6rem;
+    border-bottom-left-radius: 4rem 14rem;
+    border-bottom-right-radius: 4rem 14rem;
+}
+
+#hero.spiderman main div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 26rem;
+    height: 39rem;
+    top: 100%;
+    left: 50%;
+    margin-top: 1rem;
+    margin-left: -13rem;
+    border-top: solid 2rem #000;
+    border-left: solid 1rem #000;
+    border-right: solid 1rem #000;
+    border-top-left-radius: 17rem 6rem;
+    border-top-right-radius: 17rem 6rem;
+    border-bottom-left-radius: 9rem 26rem;
+    border-bottom-right-radius: 9rem 26rem;
+}
+
+#hero.venom header {
+    position: absolute;
+    background: #2d0049;
+    width: 58rem;
+    height: 75rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem 29rem;
+    border-top-right-radius: 29rem 29rem;
+    border-bottom-left-radius: 4rem 39rem;
+    border-bottom-right-radius: 4rem 39rem;
+}
+
+#hero.venom header div:nth-child(1) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 15rem;
+    height: 14rem;
+    top: 21rem;
+    left: 2rem;
+    border-top-left-radius: 4rem 10rem;
+    border-top-right-radius: 12rem 15rem;
+    border-bottom-left-radius: 12rem 4rem;
+    transform: rotateZ(-3deg);
+}
+
+#hero.venom header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    top: 12rem;
+    border-top-left-radius: 4rem 9rem;
+    border-top-right-radius: 10rem 13rem;
+    border-bottom-left-radius: 16rem 9rem;
+}
+
+#hero.venom header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 28rem;
+    left: 13rem;
+    border-left: solid 7rem #fff;
+    border-bottom-left-radius: 50% 100%;
+}
+
+#hero.venom header div:nth-child(2) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 15rem;
+    height: 14rem;
+    top: 21rem;
+    right: 2rem;
+    border-top-left-radius: 12rem 15rem;
+    border-top-right-radius: 4rem 10rem;
+    border-bottom-right-radius: 12rem 4rem;
+    transform: rotateZ(3deg);
+}
+
+#hero.venom header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    top: 12rem;
+    right: 0;
+    border-top-left-radius: 10rem 13rem;
+    border-top-right-radius: 4rem 9rem;
+    border-bottom-right-radius: 16rem 9rem;
+}
+
+#hero.venom header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 28rem;
+    right: 13rem;
+    border-right: solid 7rem #fff;
+    border-bottom-right-radius: 50% 100%;
+}
+
+#hero.venom header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 65rem;
+    left: 50%;
+    margin-left: -3rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 16rem 1rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 65rem;
+    right: 50%;
+    margin-right: -3rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 16rem 1rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 66rem;
+    left: 50%;
+    margin-left: -5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 13rem 2rem 0 0;
+}
+
+#hero.venom header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 66rem;
+    right: 50%;
+    margin-right: -5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 13rem 0 0 2rem;
+}
+
+#hero.venom header div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 64rem;
+    left: 50%;
+    margin-left: -8rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 16rem 2rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 64rem;
+    right: 50%;
+    margin-right: -8rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 16rem 1rem 0 2rem;
+}
+
+#hero.venom header div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    left: 50%;
+    margin-left: -11rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 14rem 2rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    right: 50%;
+    margin-right: -11rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 14rem 1rem 0 2rem;
+}
+
+#hero.venom header div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 12rem 2rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    right: 50%;
+    margin-right: -13rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 12rem 1rem 0 2rem;
+}
+
+#hero.venom header div:nth-child(8):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    left: 50%;
+    margin-left: -15rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 10rem 2rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(8):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    right: 50%;
+    margin-right: -15rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 10rem 1rem 0 2rem;
+}
+
+#hero.venom header div:nth-child(9):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    left: 50%;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 8rem 2rem 0 1rem;
+}
+
+#hero.venom header div:nth-child(9):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 3rem;
+    top: 63rem;
+    right: 50%;
+    margin-right: -17rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 8rem 1rem 0 2rem;
+}
+
+#hero.venom header div:nth-child(10) {
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 3rem;
+    top: 83rem;
+    left: 50%;
+    margin-left: -17rem;
+    border-left: solid 2rem #fff;
+    border-right: solid 2rem #fff;
+}
+
+#hero.venom header div:nth-child(10):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 4rem;
+    top: 3rem;
+    left: 50%;
+    margin-left: -15rem;
+    border-left: solid 2rem #fff;
+    border-right: solid 2rem #fff;
+}
+
+#hero.venom header div:nth-child(10):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 26rem;
+    height: 3rem;
+    top: 7rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-left: solid 3rem #fff;
+    border-right: solid 3rem #fff;
+}
+
+#hero.venom header div:nth-child(11) {
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    height: 4rem;
+    top: 93rem;
+    left: 50%;
+    margin-left: -10rem;
+    border-left: solid 3rem #fff;
+    border-right: solid 3rem #fff;
+}
+
+#hero.venom header div:nth-child(11):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 14rem;
+    height: 3rem;
+    top: 4rem;
+    left: 50%;
+    margin-left: -7rem;
+    border-left: solid 3rem #fff;
+    border-right: solid 3rem #fff;
+}
+
+#hero.venom header div:nth-child(11):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 8rem;
+    height: 2rem;
+    top: 7rem;
+    left: 50%;
+    margin-left: -4rem;
+}
+
+#hero.venom header div:nth-child(12) {
+    position: absolute;
+    background: #991100;
+    z-index: 1;
+    width: 14rem;
+    height: 14rem;
+    top: 83rem;
+    left: 50%;
+    margin-left: -7rem;
+    border-radius: 50%;
+}
+
+#hero.venom header div:nth-child(12):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 24rem;
+    height: 27rem;
+    top: 7rem;
+    border-left: solid 14rem #991100;
+    border-bottom: solid 8rem #991100;
+    border-bottom-left-radius: 100%;
+}
+
+#hero.venom header div:nth-child(12):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 10rem;
+    height: 16rem;
+    top: 26rem;
+    left: 24rem;
+    border-top: solid 8rem #991100;
+    border-top-right-radius: 100%;
+}
+
+#hero.venom main:before {
+    border-right-color: #2d0049;
+}
+
+#hero.venom main:after {
+    border-left-color: #2d0049;
+}
+
+#hero.venom main div:nth-child(1) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 38rem;
+    height: 56rem;
+    left: 50%;
+    bottom: 16rem;
+    margin-left: -19rem;
+    border-bottom-left-radius: 10rem 56rem;
+    border-bottom-right-radius: 10rem 56rem;
+}
+
+#hero.venom main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 38rem;
+    top: -13rem;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 12rem 13rem 12rem;
+}
+
+#hero.venom main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    background: #2d0049;
+    z-index: 1;
+    width: 18rem;
+    height: 5rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -9rem;
+    border-top-left-radius: 9rem 5rem;
+    border-top-right-radius: 9rem 5rem;
+}
+
+#hero.venom main div:nth-child(2) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 24rem;
+    height: 30rem;
+    left: 50%;
+    bottom: 78rem;
+    margin-left: -12rem;
+    border-radius: 50%;
+}
+
+#hero.venom main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    height: 12rem;
+    top: -4rem;
+    left: 50%;
+    margin-left: -10rem;
+    border-left: solid 4rem #fff;
+    border-right: solid 4rem #fff;
+    border-radius: 50%;
+}
+
+#hero.venom main div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 36rem;
+    height: 31rem;
+    left: 50%;
+    bottom: 59rem;
+    margin-left: -5rem;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    border-width: 4rem 6rem 0 0;
+    border-top-right-radius: 10rem 31rem;
+    transform: rotateZ(-23deg);
+}
+
+#hero.venom main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 14rem;
+    left: 32rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-right-radius: 33rem 12rem;
+    transform: rotateZ(-4deg);
+}
+
+#hero.venom main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 12rem;
+    height: 9rem;
+    top: 17rem;
+    left: 58rem;
+    transform: rotateZ(61deg);
+}
+
+#hero.venom main div:nth-child(4) {
+    position: absolute;
+    z-index: 1;
+    width: 36rem;
+    height: 31rem;
+    right: 50%;
+    bottom: 59rem;
+    margin-right: -5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-width: 4rem 0 0 6rem;
+    border-top-left-radius: 10rem 31rem;
+    transform: rotateZ(23deg);
+}
+
+#hero.venom main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 14rem;
+    right: 32rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-left-radius: 33rem 12rem;
+    transform: rotateZ(4deg);
+}
+
+#hero.venom main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 12rem;
+    height: 9rem;
+    top: 17rem;
+    right: 58rem;
+    transform: rotateZ(-61deg);
+}
+
+#hero.venom main div:nth-child(5) {
+    position: absolute;
+    z-index: 1;
+    width: 39rem;
+    height: 28rem;
+    left: 50%;
+    bottom: 66rem;
+    margin-left: -5rem;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    border-width: 4rem 6rem 0 0;
+    border-top-right-radius: 10rem 31rem;
+    transform: rotateZ(-34deg);
+}
+
+#hero.venom main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 14rem;
+    left: 33rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-right-radius: 33rem 12rem;
+    transform: rotateZ(8deg);
+}
+
+#hero.venom main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 18rem;
+    height: 9rem;
+    top: 21rem;
+    left: 59rem;
+    transform: rotateZ(73deg);
+}
+
+#hero.venom main div:nth-child(6) {
+    position: absolute;
+    z-index: 1;
+    width: 39rem;
+    height: 28rem;
+    right: 50%;
+    bottom: 66rem;
+    margin-right: -5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-width: 4rem 0 0 6rem;
+    border-top-left-radius: 10rem 31rem;
+    transform: rotateZ(34deg);
+}
+
+#hero.venom main div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 14rem;
+    right: 33rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-left-radius: 33rem 12rem;
+    transform: rotateZ(-8deg);
+}
+
+#hero.venom main div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 18rem;
+    height: 9rem;
+    top: 21rem;
+    right: 59rem;
+    transform: rotateZ(-73deg);
+}
+
+#hero.venom main div:nth-child(7) {
+    position: absolute;
+    z-index: 1;
+    width: 42rem;
+    height: 26rem;
+    left: 50%;
+    bottom: 73rem;
+    margin-left: -6rem;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    border-width: 4rem 6rem 0 0;
+    border-top-right-radius: 14rem 31rem;
+    transform: rotateZ(-39deg);
+}
+
+#hero.venom main div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 12rem;
+    left: 38rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-right-radius: 33rem 12rem;
+    transform: rotateZ(8deg);
+}
+
+#hero.venom main div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 25rem;
+    height: 9rem;
+    top: 23rem;
+    left: 61rem;
+    transform: rotateZ(77deg);
+}
+
+#hero.venom main div:nth-child(8) {
+    position: absolute;
+    z-index: 1;
+    width: 42rem;
+    height: 26rem;
+    right: 50%;
+    bottom: 73rem;
+    margin-right: -6rem;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-width: 4rem 0 0 6rem;
+    border-top-left-radius: 14rem 31rem;
+    transform: rotateZ(39deg);
+}
+
+#hero.venom main div:nth-child(8):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    height: 12rem;
+    top: 12rem;
+    right: 38rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-left-radius: 33rem 12rem;
+    transform: rotateZ(-8deg);
+}
+
+#hero.venom main div:nth-child(8):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 25rem;
+    height: 9rem;
+    top: 23rem;
+    right: 61rem;
+    transform: rotateZ(-77deg);
+}
+
+#hero.venom main div:nth-child(9) {
+    position: absolute;
+    z-index: 1;
+    width: 42rem;
+    height: 23rem;
+    left: 50%;
+    bottom: 82rem;
+    margin-left: -5rem;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    border-width: 4rem 6rem 0 0;
+    border-top-right-radius: 18rem 31rem;
+    transform: rotateZ(-44deg);
+}
+
+#hero.venom main div:nth-child(9):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 41rem;
+    height: 12rem;
+    top: 11rem;
+    left: 38rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-right-radius: 33rem 12rem;
+    transform: rotateZ(10deg);
+}
+
+#hero.venom main div:nth-child(9):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 29rem;
+    height: 9rem;
+    top: 27rem;
+    left: 62rem;
+    transform: rotateZ(82deg);
+}
+
+#hero.venom main div:nth-child(10) {
+    position: absolute;
+    z-index: 1;
+    width: 42rem;
+    height: 23rem;
+    right: 50%;
+    bottom: 82rem;
+    margin-right: -5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    border-width: 4rem 0 0 6rem;
+    border-top-left-radius: 18rem 31rem;
+    transform: rotateZ(44deg);
+}
+
+#hero.venom main div:nth-child(10):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 41rem;
+    height: 12rem;
+    top: 11rem;
+    right: 38rem;
+    border-bottom: solid 7rem #fff;
+    border-bottom-left-radius: 33rem 12rem;
+    transform: rotateZ(-10deg);
+}
+
+#hero.venom main div:nth-child(10):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 29rem;
+    height: 9rem;
+    top: 27rem;
+    right: 62rem;
+    transform: rotateZ(-82deg);
+}
+
+#hero.human-torch header {
+    background: #ff9900;
+    width: 58rem;
+    height: 70rem;
+    top: 29rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem 29rem;
+    border-top-right-radius: 29rem 29rem;
+    border-bottom-left-radius: 2rem 41rem;
+    border-bottom-right-radius: 2rem 41rem;
+    box-shadow: 0 0 20rem 0 #ff9900, 0 0 24rem 0 #ff9900;
+}
+
+#hero.human-torch header:before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 15rem;
+    height: 7rem;
+    top: 43rem;
+    left: 10rem;
+    border-top-right-radius: 15rem 5rem;
+    border-bottom-left-radius: 10rem 7rem;
+    border-bottom-right-radius: 5rem 2rem;
+    border-bottom: solid 1px #ff9900;
+}
+
+#hero.human-torch header:after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 15rem;
+    height: 7rem;
+    top: 43rem;
+    right: 10rem;
+    border-top-left-radius: 15rem 5rem;
+    border-bottom-left-radius: 5rem 2rem;
+    border-bottom-right-radius: 10rem 7rem;
+    border-bottom: solid 1px #ff9900;
+}
+
+#hero.human-torch main:before {
+    border-right-color: #ff9900;
+}
+
+#hero.human-torch main:after {
+    border-left-color: #ff9900;
+}
+
+#hero.human-torch main div:nth-child(1) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 58rem;
+    height: 58rem;
+    left: 50%;
+    bottom: 80rem;
+    margin-left: -29rem;
+    border-radius: 50%;
+    border: solid 2rem #ffee00;
+}
+
+#hero.human-torch main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    width: 22rem;
+    height: 26rem;
+    right: 0;
+    bottom: 0;
+    border-top: solid 8rem #ffee00;
+    border-left: solid 8rem #ffee00;
+}
+
+#hero.human-torch main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    right: 14rem;
+    bottom: 18rem;
+    border-style: solid;
+    border-color: transparent #ffee00 #ffee00 transparent;
+    border-width: 20rem;
+}
+
+#hero.human-torch main div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    right: 14rem;
+    bottom: 18rem;
+    left: 50%;
+    bottom: 108rem;
+    margin-left: -11rem;
+    border-style: solid;
+    border-color: transparent #ff9900 #ff9900 transparent;
+    border-width: 8rem;
+}
+
+#hero.human-torch main div:nth-child(3) {
+    position: absolute;
+    z-index: -1;
+    width: 40rem;
+    height: 167rem;
+    left: 50%;
+    bottom: 10rem;
+    margin-left: -20rem;
+    border-top-left-radius: 20rem 29rem;
+    border-top-right-radius: 20rem 29rem;
+    border-bottom-left-radius: 20rem 41rem;
+    border-bottom-right-radius: 20rem 41rem;
+    box-shadow: 0 0 40rem 0 #ff9900, 0 0 44rem 0 #ff9900;
+}
+
+#hero.human-torch main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    width: 160rem;
+    height: 57rem;
+    left: 50%;
+    bottom: 90rem;
+    margin-left: -80rem;
+    border-top-left-radius: 20rem 29rem;
+    border-top-right-radius: 20rem 29rem;
+    border-bottom-left-radius: 20rem 41rem;
+    border-bottom-right-radius: 20rem 41rem;
+    box-shadow: 0 0 80rem 0 #ff9900, 0 0 84rem 0 #ff9900;
+}
+
+#hero.human-torch main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    width: 80rem;
+    height: 57rem;
+    left: 50%;
+    bottom: 30rem;
+    margin-left: -40rem;
+    border-top-left-radius: 20rem 29rem;
+    border-top-right-radius: 20rem 29rem;
+    border-bottom-left-radius: 20rem 41rem;
+    border-bottom-right-radius: 20rem 41rem;
+    box-shadow: 0 0 80rem 0 #ff9900, 0 0 84rem 0 #ff9900;
+}
+
+#hero.doctor-doom header {
+    background: #0d6a2a;
+    z-index: 4;
+    width: 86rem;
+    height: 76rem;
+    top: 20rem;
+    left: 50%;
+    margin-left: -43rem;
+    border-top-left-radius: 43rem 63rem;
+    border-top-right-radius: 43rem 63rem;
+    border-bottom-left-radius: 4rem 13rem;
+    border-bottom-right-radius: 4rem 13rem;
+}
+
+#hero.doctor-doom header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 7rem;
+    border-style: solid;
+    border-color: transparent #0d6a2a transparent transparent;
+    border-width: 12rem 29rem 32rem 0;
+}
+
+#hero.doctor-doom header div:nth-child(1) {
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 66rem;
+    height: 60rem;
+    top: 47rem;
+    left: 50%;
+    margin-left: -33rem;
+}
+
+#hero.doctor-doom header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent #0d6a2a transparent;
+    border-width: 0 28rem 20rem 0;
+}
+
+#hero.doctor-doom header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent #0d6a2a transparent;
+    border-width: 0 0 20rem 28rem;
+}
+
+#hero.doctor-doom header div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 40rem;
+    height: 12rem;
+    top: 109rem;
+    left: 50%;
+    margin-left: -20rem;
+    border-top: solid 4rem #aaa;
+    border-bottom: solid 4rem #aaa;
+}
+
+#hero.doctor-doom header div:nth-child(3) {
+    position: absolute;
+    background: #ffcc00;
+    overflow: hidden;
+    z-index: 3;
+    width: 34rem;
+    height: 34rem;
+    top: 98rem;
+    left: 50%;
+    margin-left: -50rem;
+    border-radius: 50%;
+}
+
+#hero.doctor-doom header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 38rem;
+    height: 10rem;
+    top: 12rem;
+    left: -7rem;
+    border-top: solid 4rem #fff;
+    border-bottom: solid 2rem #fff;
+    transform: rotateZ(55deg);
+}
+
+#hero.doctor-doom header div:nth-child(4) {
+    position: absolute;
+    background: #ffcc00;
+    overflow: hidden;
+    z-index: 3;
+    width: 34rem;
+    height: 34rem;
+    top: 98rem;
+    right: 50%;
+    margin-right: -50rem;
+    border-radius: 50%;
+}
+
+#hero.doctor-doom header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 38rem;
+    height: 10rem;
+    top: 12rem;
+    left: -7rem;
+    border-top: solid 4rem #fff;
+    border-bottom: solid 2rem #fff;
+    transform: rotateZ(55deg);
+}
+
+#hero.doctor-doom header div:nth-child(5) {
+    position: absolute;
+    background: #666;
+    z-index: 1;
+    width: 60rem;
+    height: 50rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top: solid 30rem #999;
+}
+
+#hero.doctor-doom header div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    width: 60rem;
+    border-style: solid;
+    border-color: #666 transparent transparent transparent;
+    border-width: 20rem 21rem 0 21rem;
+}
+
+#hero.doctor-doom header div:nth-child(6) {
+    position: absolute;
+    z-index: 1;
+    top: 60rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-style: solid;
+    border-color: #999 transparent transparent transparent;
+    border-width: 6rem 30rem 0 30rem;
+}
+
+#hero.doctor-doom header div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    top: 26rem;
+    left: 50%;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: #999 transparent transparent transparent;
+    border-width: 8rem 8rem 0 8rem;
+}
+
+#hero.doctor-doom header div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    top: -4rem;
+    left: 50%;
+    margin-left: -17rem;
+    border-style: solid;
+    border-color: transparent transparent #999 transparent;
+    border-width: 0 4rem 30rem 4rem;
+}
+
+#hero.doctor-doom header div:nth-child(7) {
+    position: absolute;
+    z-index: 1;
+    top: 50rem;
+    left: 50%;
+    margin-left: -23rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 13rem 8rem 2rem;
+}
+
+#hero.doctor-doom header div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    top: 8rem;
+    left: -2rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 4rem 0 0 15rem;
+}
+
+#hero.doctor-doom header div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    background: #d5282b;
+    z-index: 2;
+    width: 4rem;
+    height: 3rem;
+    top: 6rem;
+    left: 3rem;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+#hero.doctor-doom header div:nth-child(8) {
+    position: absolute;
+    z-index: 1;
+    top: 50rem;
+    right: 50%;
+    margin-right: -23rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 2rem 8rem 13rem;
+}
+
+#hero.doctor-doom header div:nth-child(8):before {
+    content: " ";
+    position: absolute;
+    top: 8rem;
+    right: -2rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 4rem 15rem 0 0;
+}
+
+#hero.doctor-doom header div:nth-child(8):after {
+    content: " ";
+    position: absolute;
+    background: #d5282b;
+    z-index: 2;
+    width: 4rem;
+    height: 3rem;
+    top: 6rem;
+    right: 3rem;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+#hero.doctor-doom header div:nth-child(9) {
+    position: absolute;
+    background: #666;
+    z-index: 1;
+    width: 26rem;
+    height: 9rem;
+    top: 81rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-style: solid;
+    border-color: #352f3a;
+    border-width: 4rem 3rem;
+    border-radius: 2rem;
+}
+
+#hero.doctor-doom header div:nth-child(9):before {
+    content: " ";
+    position: absolute;
+    width: 26rem;
+    height: 9rem;
+    top: -4rem;
+    left: -3rem;
+    border-style: solid;
+    border-color: #999 transparent;
+    border-width: 2rem 13rem 2rem 13rem;
+}
+
+#hero.doctor-doom header div:nth-child(9):after {
+    content: " ";
+    position: absolute;
+    width: 20rem;
+    height: 9rem;
+    top: -4rem;
+    border-style: solid;
+    border-color: transparent #666;
+    border-width: 0 2rem 0 2rem;
+}
+
+#hero.doctor-doom header div:nth-child(10) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width: 66rem;
+    height: 60rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -33rem;
+}
+
+#hero.doctor-doom header div:nth-child(10):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 143rem;
+    height: 100rem;
+    top: -18rem;
+    left: -50rem;
+    border-left: solid 50rem #0d6a2a;
+    border-top-left-radius: 130% 100%;
+}
+
+#hero.doctor-doom header div:nth-child(10):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 143rem;
+    height: 100rem;
+    top: -18rem;
+    right: -50rem;
+    border-right: solid 50rem #0d6a2a;
+    border-top-right-radius: 130% 100%;
+}
+
+#hero.doctor-doom main:before {
+    border-right-color: #00770e;
+}
+
+#hero.doctor-doom main:after {
+    border-left-color: #00770e;
+}
+
+#hero.doctor-doom main div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 226rem;
+    top: -164rem;
+    left: 50%;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #0d6a2a transparent;
+    border-width: 0 29rem 20rem 29rem;
+}
+
+#hero.doctor-doom main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 168rem;
+    top: -6rem;
+    left: 50%;
+    margin-left: -84rem;
+    border-style: solid;
+    border-color: transparent transparent #0d6a2a transparent;
+    border-width: 0 27rem 6rem 27rem;
+}
+
+#hero.doctor-doom main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 114rem;
+    top: -19rem;
+    left: 50%;
+    margin-left: -57rem;
+    border-style: solid;
+    border-color: transparent transparent #0d6a2a transparent;
+    border-width: 0 19rem 13rem 19rem;
+}
+
+#hero.iron-man header {
+    background: #bb1100;
+    width: 60rem;
+    height: 76rem;
+    top: 22rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+}
+
+#hero.iron-man header:before {
+    content: " ";
+    position: absolute;
+    background: #eeaa22;
+    z-index: 1;
+    width: 54rem;
+    height: 52rem;
+    top: 7rem;
+    left: 50%;
+    margin-left: -27rem;
+    border-top-left-radius: 27rem;
+    border-top-right-radius: 27rem;
+}
+
+#hero.iron-man header:after {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: -1;
+    width: 68rem;
+    height: 18rem;
+    top: 41rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.iron-man header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 54rem;
+    top: 59rem;
+    left: 50%;
+    margin-left: -27rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 12rem 10rem 0 10rem;
+}
+
+#hero.iron-man header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #eeaa22;
+    z-index: 1;
+    width: 34rem;
+    height: 13rem;
+}
+
+#hero.iron-man header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    top: 13rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 4rem 4rem 0 4rem;
+}
+
+#hero.iron-man header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #bb1100;
+    z-index: 1;
+    width: 18rem;
+    height: 24rem;
+    top: 6rem;
+    left: 50%;
+    margin-left: -9rem;
+    border-bottom-left-radius: 2rem 24rem;
+    border-bottom-right-radius: 2rem 24rem;
+}
+
+#hero.iron-man header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 26rem;
+    top: 85rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 2rem 3rem 2rem;
+}
+
+#hero.iron-man header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 17rem;
+    height: 9rem;
+    top: 45rem;
+    left: 8rem;
+    border-top-right-radius: 19rem 7rem;
+    border-bottom-left-radius: 16rem 9rem;
+    border-bottom-right-radius: 4rem 2rem;
+}
+
+#hero.iron-man header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 17rem;
+    height: 9rem;
+    top: 45rem;
+    right: 8rem;
+    border-top-left-radius: 19rem 7rem;
+    border-bottom-left-radius: 4rem 2rem;
+    border-bottom-right-radius: 16rem 9rem;
+}
+
+#hero.iron-man header div:nth-child(4) {
+    position: absolute;
+    background: #bb1100;
+    z-index: 1;
+    width: 22rem;
+    height: 1rem;
+    top: 80rem;
+    left: 50%;
+    margin-left: -11rem;
+}
+
+#hero.iron-man main:before {
+    border-right-color: #bb1100;
+}
+
+#hero.iron-man main:after {
+    border-left-color: #bb1100;
+}
+
+#hero.iron-man main div:nth-child(1) {
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 36rem;
+    height: 36rem;
+    left: 50%;
+    bottom: 110rem;
+    margin-left: -18rem;
+    border-radius: 50%;
+    border: solid 2rem #ebb19a;
+    box-shadow: inset 0 0 0 1rem #bb1100;
+}
+
+#hero.iron-man main div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -39rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 62rem 39rem 0 39rem;
+}
+
+#hero.iron-man main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 78rem;
+    left: 50%;
+    bottom: 62rem;
+    margin-left: -39rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent #eeaa22 transparent;
+    border-width: 15rem 6rem 15rem 6rem;
+}
+
+#hero.iron-man main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 78rem;
+    left: 50%;
+    bottom: 92rem;
+    margin-left: -39rem;
+    border-style: solid;
+    border-color: transparent transparent #eeaa22 transparent;
+    border-width: 0 39rem 14rem 39rem;
+}
+
+#hero.iron-man main div:nth-child(3) {
+    position: absolute;
+    left: 50%;
+    bottom: 90rem;
+}
+
+#hero.iron-man main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 32rem 4rem 4rem;
+    transform: rotateZ(-35deg);
+}
+
+#hero.iron-man main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 4rem 4rem 32rem;
+    transform: rotateZ(35deg);
+}
+
+#hero.iron-man main div:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    bottom: 70rem;
+}
+
+#hero.iron-man main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 32rem 4rem 4rem;
+    transform: rotateZ(-35deg);
+}
+
+#hero.iron-man main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 4rem 4rem 32rem;
+    transform: rotateZ(35deg);
+}
+
+#hero.iron-man main div:nth-child(5) {
+    position: absolute;
+    left: 50%;
+    bottom: 50rem;
+}
+
+#hero.iron-man main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 32rem 4rem 4rem;
+    transform: rotateZ(-35deg);
+}
+
+#hero.iron-man main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: -3rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 4rem 4rem 32rem;
+    transform: rotateZ(35deg);
+}
+
+#hero.iron-man main div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 143rem;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent #bb1100 #bb1100 transparent;
+    border-width: 0 30rem 13rem 10rem;
+}
+
+#hero.iron-man main div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 156rem;
+    margin-left: -103rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 24rem 10rem 29rem;
+}
+
+#hero.iron-man main div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 143rem;
+    margin-right: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 #bb1100;
+    border-width: 0 10rem 13rem 30rem;
+}
+
+#hero.iron-man main div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 156rem;
+    margin-right: -103rem;
+    border-style: solid;
+    border-color: transparent transparent #bb1100 transparent;
+    border-width: 0 29rem 10rem 24rem;
+}
+
+#hero.iron-man main div:nth-child(8) {
+    position: absolute;
+    z-index: 1;
+    top: -148rem;
+    left: 50%;
+    margin-left: -70rem;
+    transform: rotateZ(12deg);
+}
+
+#hero.iron-man main div:nth-child(8):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 11rem;
+    border: solid 1rem #eeaa22;
+    border-radius: 50%;
+}
+
+#hero.iron-man main div:nth-child(8):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 5rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #eeaa22;
+    border-width: 6rem 0 5rem 47rem;
+}
+
+#hero.iron-man main div:nth-child(9) {
+    position: absolute;
+    z-index: 1;
+    top: -148rem;
+    right: 50%;
+    margin-right: -70rem;
+    transform: rotateZ(-12deg);
+}
+
+#hero.iron-man main div:nth-child(9):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 11rem;
+    height: 11rem;
+    border: solid 1rem #eeaa22;
+    border-radius: 50%;
+}
+
+#hero.iron-man main div:nth-child(9):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 5rem;
+    border-style: solid;
+    border-color: transparent #eeaa22 transparent transparent;
+    border-width: 6rem 47rem 5rem 0;
+}
+
+#hero.iron-man main div:nth-child(10):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 96rem;
+    margin-left: -92rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 7rem 36rem 0 13rem;
+    transform: rotateZ(23deg);
+}
+
+#hero.iron-man main div:nth-child(10):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 96rem;
+    margin-right: -92rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 7rem 13rem 0 36rem;
+    transform: rotateZ(-23deg);
+}
+
+#hero.war-machine header {
+    background: #352f3a;
+    width: 60rem;
+    height: 76rem;
+    top: 22rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+}
+
+#hero.war-machine header:before {
+    content: " ";
+    position: absolute;
+    background: #aaa;
+    z-index: 1;
+    width: 54rem;
+    height: 52rem;
+    top: 7rem;
+    left: 50%;
+    margin-left: -27rem;
+    border-top-left-radius: 27rem;
+    border-top-right-radius: 27rem;
+}
+
+#hero.war-machine header:after {
+    content: " ";
+    position: absolute;
+    background: #352f3a;
+    z-index: -1;
+    width: 68rem;
+    height: 18rem;
+    top: 41rem;
+    left: 50%;
+    margin-left: -34rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.war-machine header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 54rem;
+    top: 59rem;
+    left: 50%;
+    margin-left: -27rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 12rem 10rem 0 10rem;
+}
+
+#hero.war-machine header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #aaa;
+    z-index: 1;
+    width: 34rem;
+    height: 13rem;
+}
+
+#hero.war-machine header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 34rem;
+    top: 13rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 4rem 4rem 0 4rem;
+}
+
+#hero.war-machine header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #352f3a;
+    z-index: 1;
+    width: 18rem;
+    height: 24rem;
+    top: 6rem;
+    left: 50%;
+    margin-left: -9rem;
+    border-bottom-left-radius: 2rem 24rem;
+    border-bottom-right-radius: 2rem 24rem;
+}
+
+#hero.war-machine header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 26rem;
+    top: 85rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-style: solid;
+    border-color: transparent transparent #352f3a transparent;
+    border-width: 0 2rem 3rem 2rem;
+}
+
+#hero.war-machine header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 17rem;
+    height: 9rem;
+    top: 45rem;
+    left: 8rem;
+    border-top-right-radius: 19rem 7rem;
+    border-bottom-left-radius: 16rem 9rem;
+    border-bottom-right-radius: 4rem 2rem;
+}
+
+#hero.war-machine header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 17rem;
+    height: 9rem;
+    top: 45rem;
+    right: 8rem;
+    border-top-left-radius: 19rem 7rem;
+    border-bottom-left-radius: 4rem 2rem;
+    border-bottom-right-radius: 16rem 9rem;
+}
+
+#hero.war-machine header div:nth-child(4) {
+    position: absolute;
+    background: #352f3a;
+    z-index: 1;
+    width: 22rem;
+    height: 1rem;
+    top: 80rem;
+    left: 50%;
+    margin-left: -11rem;
+}
+
+#hero.war-machine header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    background: #ee1100;
+    z-index: 1;
+    width: 7rem;
+    height: 7rem;
+    top: -47rem;
+    left: -24rem;
+    border: solid 1px #352f3a;
+    border-radius: 50%;
+    box-shadow: inset 0 0 3rem 0 #ee1100, inset 0 0 0 4rem #fff;
+}
+
+#hero.war-machine main:before {
+    border-right-color: #352f3a;
+}
+
+#hero.war-machine main:after {
+    border-left-color: #352f3a;
+}
+
+#hero.war-machine main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 46rem;
+    height: 46rem;
+    left: 50%;
+    bottom: 105rem;
+    margin-left: -23rem;
+    border-radius: 50%;
+    border: solid 2rem #aaa;
+    box-shadow: inset 0 0 0 1rem #ff1800;
+}
+
+#hero.war-machine main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 226rem;
+    bottom: 144rem;
+    left: 50%;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent transparent #352f3a transparent;
+    border-width: 0 24rem 24rem 24rem;
+}
+
+#hero.war-machine main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 30rem;
+    margin-left: -46rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #aaa;
+    border-width: 10rem 0 60rem 43rem;
+    transform: rotateZ(-38deg);
+}
+
+#hero.war-machine main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 30rem;
+    margin-right: -46rem;
+    border-style: solid;
+    border-color: transparent #aaa transparent transparent;
+    border-width: 10rem 43rem 60rem 0;
+    transform: rotateZ(38deg);
+}
+
+#hero.war-machine main div:nth-child(3) {
+    position: absolute;
+    z-index: 1;
+    width: 70rem;
+    left: 50%;
+    bottom: 73rem;
+    margin-left: -35rem;
+    border-style: solid;
+    border-color: #352f3a transparent transparent transparent;
+    border-width: 25rem 17rem 0 17rem;
+}
+
+#hero.war-machine main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 121rem;
+    margin-left: -117rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 7rem 66rem 0 13rem;
+    transform: rotateZ(23deg);
+}
+
+#hero.war-machine main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 121rem;
+    margin-right: -117rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 7rem 13rem 0 66rem;
+    transform: rotateZ(-23deg);
+}
+
+#hero.war-machine main div:nth-child(5) {
+    position: absolute;
+    z-index: 1;
+    width: 38rem;
+    left: 50%;
+    bottom: 91rem;
+    margin-left: -19rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 8rem 0 8rem;
+}
+
+#hero.war-machine main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 28rem;
+    top: 12rem;
+    left: 50%;
+    margin-left: -14rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 10rem 0 10rem;
+}
+
+#hero.war-machine main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 28rem;
+    top: 26rem;
+    left: 50%;
+    margin-left: -14rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 10rem 0 10rem;
+}
+
+#hero.war-machine main div:nth-child(6) {
+    position: absolute;
+    z-index: 1;
+    width: 28rem;
+    left: 50%;
+    bottom: 49rem;
+    margin-left: -14rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 10rem 0 10rem;
+}
+
+#hero.war-machine main div:nth-child(6):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 28rem;
+    top: 12rem;
+    left: 50%;
+    margin-left: -14rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 10rem 0 10rem;
+}
+
+#hero.war-machine main div:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 12rem;
+    top: 26rem;
+    left: 50%;
+    margin-left: -6rem;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+    border-width: 2rem 6rem 0 6rem;
+}
+
+#hero.war-machine main div:nth-child(7) {
+    position: absolute;
+    background: #352f3a;
+    z-index: 1;
+    width: 48rem;
+    height: 48rem;
+    left: 50%;
+    bottom: 150rem;
+    margin-left: 39rem;
+    border-radius: 50%;
+    border: solid 1rem #352f3a;
+    box-shadow: inset 0 0 0 3rem #aaa;
+}
+
+#hero.war-machine main div:nth-child(7):before {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: -1;
+    width: 26rem;
+    height: 11rem;
+    top: -8rem;
+    left: 50%;
+    margin-left: -13rem;
+    border-style: solid;
+    border-color: #352f3a #352f3a #aaa #352f3a;
+    border-width: 2rem 12rem 4rem 12rem;
+    box-shadow: inset 0 -3rem 0 0 #352f3a;
+}
+
+#hero.war-machine main div:nth-child(7):after {
+    content: " ";
+    position: absolute;
+    background: #352f3a;
+    width: 18rem;
+    height: 18rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -9rem;
+    margin-top: -9rem;
+    border-radius: 50%;
+    border: solid 1rem #666;
+    box-shadow: -9rem -9rem 0 -6rem #352f3a, -9rem -9rem 0 -5rem #666, -13rem 0 0 -6rem #352f3a, -13rem 0 0 -5rem #666, -9rem 9rem 0 -6rem #352f3a, -9rem 9rem 0 -5rem #666, 0 13rem 0 -6rem #352f3a, 0 13rem 0 -5rem #666, 9rem 9rem 0 -6rem #352f3a, 9rem 9rem 0 -5rem #666, 13rem 0 0 -6rem #352f3a, 13rem 0 0 -5rem #666, 9rem -9rem 0 -6rem #352f3a, 9rem -9rem 0 -5rem #666, 0 -13rem 0 -6rem #352f3a, 0 -13rem 0 -5rem #666;
+}
+
+#hero.war-machine main div:nth-child(8) {
+    position: absolute;
+    z-index: 1;
+    width: 41rem;
+    height: 10rem;
+    left: 50%;
+    bottom: 168rem;
+    margin-left: -75rem;
+    border-style: solid;
+    border-color: #352f3a transparent transparent #352f3a;
+    border-width: 4rem 4rem 0 37rem;
+}
+
+#hero.war-machine main div:nth-child(8):before {
+    content: " ";
+    position: absolute;
+    background: #aaa;
+    z-index: 1;
+    width: 50rem;
+    height: 19rem;
+    top: -23rem;
+    left: -46rem;
+    border-style: solid;
+    border-color: #352f3a;
+    border-width: 2rem 1rem 3rem 1rem;
+    box-shadow: inset 0 4rem 0 0 #aaa, inset 0 5rem 0 0 #352f3a;
+}
+
+#hero.war-machine main div:nth-child(8):after {
+    content: " ";
+    position: absolute;
+    background: #352f3a;
+    z-index: 1;
+    width: 6rem;
+    height: 6rem;
+    top: -14rem;
+    left: -44rem;
+    border-radius: 50%;
+    box-shadow: 40rem -8rem 0 -2rem #ff1800, 32rem -8rem 0 -2rem #ff1800, 24rem -8rem 0 -2rem #ff1800, 16rem -8rem 0 -2rem #ff1800, 8rem -8rem 0 -2rem #ff1800, 0 -8rem 0 -2rem #ff1800, 8rem 0 0 0 #352f3a, 16rem 0 0 0 #352f3a, 24rem 0 0 0 #352f3a, 32rem 0 0 0 #352f3a, 40rem 0 0 0 #352f3a;
+}
+
+#hero.flash header {
+    position: absolute;
+    background: #ff1800;
+    width: 58rem;
+    height: 68rem;
+    top: 30rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-top-left-radius: 29rem 29rem;
+    border-top-right-radius: 29rem 29rem;
+    border-bottom-left-radius: 2rem 39rem;
+    border-bottom-right-radius: 2rem 39rem;
+}
+
+#hero.flash header div:nth-child(1) {
+    position: absolute;
+    background: #eeaa22;
+    z-index: -1;
+    width: 66rem;
+    height: 11rem;
+    top: 40rem;
+    left: 50%;
+    margin-left: -33rem;
+    border-radius: 3rem 3rem 8rem 8rem;
+}
+
+#hero.flash header div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left: 100%;
+    bottom: 50%;
+    margin-left: -2rem;
+    margin-bottom: 3rem;
+    border-style: solid;
+    border-color: transparent transparent #eeaa22 transparent;
+    border-width: 0 4rem 17rem 0;
+}
+
+#hero.flash header div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    right: 100%;
+    bottom: 50%;
+    margin-right: -2rem;
+    margin-bottom: 3rem;
+    border-style: solid;
+    border-color: transparent transparent #eeaa22 transparent;
+    border-width: 0 0 17rem 4rem;
+}
+
+#hero.flash header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 43rem;
+    left: 7rem;
+    border-top-right-radius: 19rem 5rem;
+    border-bottom-left-radius: 13rem 9rem;
+    border-bottom-right-radius: 6rem 4rem;
+}
+
+#hero.flash header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    width: 19rem;
+    height: 9rem;
+    top: 43rem;
+    right: 7rem;
+    border-top-left-radius: 19rem 5rem;
+    border-bottom-left-radius: 6rem 4rem;
+    border-bottom-right-radius: 13rem 9rem;
+}
+
+#hero.flash header div:nth-child(3) {
+    position: absolute;
+    z-index: 2;
+    width: 38rem;
+    top: 76rem;
+    left: 50%;
+    margin-left: -19rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 12rem 10rem 0 10rem;
+}
+
+#hero.flash header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 48rem;
+    top: -35rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 23rem 5rem 0 5rem;
+}
+
+#hero.flash header div:nth-child(4) {
+    position: absolute;
+    z-index: 2;
+    top: 84rem;
+    left: 50%;
+    margin-left: -9rem;
+    border-style: solid;
+    border-color: transparent transparent #ff1800 transparent;
+    border-width: 0 9rem 4rem 9rem;
+}
+
+#hero.flash header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    top: -31rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: #ff1800 transparent transparent transparent;
+    border-width: 8rem 20rem 0 8rem;
+}
+
+#hero.flash header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    top: -31rem;
+    right: 50%;
+    margin-right: -24rem;
+    border-style: solid;
+    border-color: #ff1800 transparent transparent transparent;
+    border-width: 8rem 8rem 0 20rem;
+}
+
+#hero.flash main:before {
+    border-right-color: #ff1800;
+}
+
+#hero.flash main:after {
+    border-left-color: #ff1800;
+}
+
+#hero.flash main div:nth-child(1) {
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 56rem;
+    height: 56rem;
+    left: 50%;
+    bottom: 82rem;
+    margin-left: -28rem;
+    border-radius: 50%;
+    border: solid #eeaa22 3rem;
+}
+
+#hero.flash main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    right: 50%;
+    bottom: 50%;
+    margin-right: -16rem;
+    margin-bottom: -2rem;
+    border-style: solid;
+    border-color: transparent transparent #eeaa22 transparent;
+    border-width: 0 0 37rem 20rem;
+    transform: skew(-33deg);
+}
+
+#hero.flash main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: -2rem;
+    margin-left: -16rem;
+    border-style: solid;
+    border-color: #eeaa22 transparent transparent transparent;
+    border-width: 37rem 20rem 0 0;
+    transform: skew(-33deg);
+}
+
+#hero.dare-devil header {
+    position: absolute;
+    background: #a72201;
+    width: 60rem;
+    height: 70rem;
+    top: 28rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 30rem 37rem;
+    border-top-right-radius: 30rem 37rem;
+}
+
+#hero.dare-devil header div:nth-child(1) {
+    position: absolute;
+    width: 60rem;
+    height: 30rem;
+    top: -8rem;
+    left: 0;
+    border-bottom: solid 10rem #a72201;
+    border-radius: 8rem / 13rem;
+}
+
+#hero.dare-devil header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 15rem;
+    height: 7rem;
+    top: 46rem;
+    left: 10rem;
+    border-top-right-radius: 15rem 5rem;
+    border-bottom-left-radius: 10rem 7rem;
+    border-bottom-right-radius: 5rem 2rem;
+    border-bottom: solid 1px #a72201;
+}
+
+#hero.dare-devil header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #ff1800;
+    z-index: 1;
+    width: 15rem;
+    height: 7rem;
+    top: 46rem;
+    right: 10rem;
+    border-top-left-radius: 15rem 5rem;
+    border-bottom-left-radius: 5rem 2rem;
+    border-bottom-right-radius: 10rem 7rem;
+    border-bottom: solid 1px #a72201;
+}
+
+#hero.dare-devil header div:nth-child(3) {
+    position: absolute;
+    width: 48rem;
+    top: 74rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 16rem 16rem 0 16rem;
+}
+
+#hero.dare-devil header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    width: 48rem;
+    top: -32rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: transparent transparent #ffaa77 transparent;
+    border-width: 0 2rem 16rem 2rem;
+}
+
+#hero.dare-devil header div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    background: #a72201;
+    width: 29rem;
+    height: 15rem;
+    top: 52rem;
+    left: 50%;
+    margin-left: -28rem;
+    border-bottom-right-radius: 26rem 10rem;
+}
+
+#hero.dare-devil header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    background: #a72201;
+    width: 29rem;
+    height: 15rem;
+    top: 52rem;
+    right: 50%;
+    margin-right: -28rem;
+    border-bottom-left-radius: 26rem 10rem;
+}
+
+#hero.dare-devil main:before {
+    border-right-color: #a72201;
+}
+
+#hero.dare-devil main:after {
+    border-left-color: #a72201;
+}
+
+#hero.dare-devil main div:nth-child(1):before {
+    content: "D";
+    position: absolute;
+    z-index: 1;
+    color: #ff1800;
+    font-size: 58rem;
+    font-style: italic;
+    left: 50%;
+    top: 0;
+    margin-top: -139rem;
+    margin-left: -25rem;
+}
+
+#hero.dare-devil main div:nth-child(1):after {
+    content: "D";
+    position: absolute;
+    z-index: 1;
+    color: #ff1800;
+    font-size: 58rem;
+    font-style: italic;
+    left: 50%;
+    top: 0;
+    margin-top: -129rem;
+    margin-left: -10rem;
+}
+
+#hero.punisher header {
+    background: #ffaa77;
+    width: 60rem;
+    height: 62rem;
+    top: 40rem;
+    left: 50%;
+    margin-left: -30rem;
+    border-top-left-radius: 27rem;
+    border-top-right-radius: 27rem;
+    border-top: solid 12rem #1d1216;
+}
+
+#hero.punisher header:before {
+    content: " ";
+    position: absolute;
+    background: #ffaa77;
+    z-index: 1;
+    width: 70rem;
+    height: 16rem;
+    top: 20rem;
+    left: 50%;
+    margin-left: -35rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 12rem 8rem;
+    border-bottom-right-radius: 12rem 8rem;
+}
+
+#hero.punisher header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 60rem;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -20rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 20rem 20rem 0 20rem;
+}
+
+#hero.punisher header div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    width: 30rem;
+    height: 36rem;
+    top: -8rem;
+    left: 12rem;
+    border-top: solid 9rem #1d1216;
+    border-top-left-radius: 30rem 19rem;
+}
+
+#hero.punisher header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 18rem;
+    right: 50%;
+    margin-right: 3rem;
+    border-top-right-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.punisher header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    left: 50%;
+    margin-left: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 6rem 0 3rem;
+}
+
+#hero.punisher header div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 23rem;
+    height: 7rem;
+    top: 18rem;
+    left: 50%;
+    margin-left: 3rem;
+    border-top-left-radius: 22rem 5rem;
+    border-top: solid 3rem black;
+}
+
+#hero.punisher header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    right: 50%;
+    margin-right: -29rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 5rem 3rem 0 6rem;
+}
+
+#hero.punisher main:before {
+    border-right-color: #3a0000;
+}
+
+#hero.punisher main:after {
+    border-left-color: #3a0000;
+}
+
+#hero.punisher main div:nth-child(1) {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    margin-left: -44rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 170rem 44rem 0 44rem;
+}
+
+#hero.punisher main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 110rem;
+    left: 50%;
+    bottom: 155rem;
+    margin-left: -55rem;
+    border-style: solid;
+    border-color: #3a0000 transparent transparent transparent;
+    border-width: 46rem 7rem 0 7rem;
+}
+
+#hero.punisher main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 78rem;
+    left: 50%;
+    bottom: 155rem;
+    margin-left: -39rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 7rem 14rem 7rem;
+}
+
+#hero.punisher main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 50rem;
+    left: 50%;
+    bottom: 88rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 9rem 3rem 0 3rem;
+    margin-left: -25rem;
+}
+
+#hero.punisher main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 2;
+    width: 38rem;
+    height: 8rem;
+    left: 50%;
+    bottom: 87rem;
+    margin-left: -19rem;
+    border-top-left-radius: 19rem 8rem;
+    border-top-right-radius: 19rem 8rem;
+}
+
+#hero.punisher main div:nth-child(3) {
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 56rem;
+    height: 42rem;
+    left: 50%;
+    bottom: 98rem;
+    margin-left: -28rem;
+    border-top-left-radius: 26rem 26rem;
+    border-top-right-radius: 26rem 26rem;
+    border-bottom-left-radius: 5rem 16rem;
+    border-bottom-right-radius: 5rem 16rem;
+}
+
+#hero.punisher main div:nth-child(3):before {
+    content: " ";
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    width: 48rem;
+    height: 13rem;
+    top: 27rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 20rem 6rem;
+    border-bottom-right-radius: 20rem 6rem;
+}
+
+#hero.punisher main div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 48rem;
+    top: 25rem;
+    left: 50%;
+    margin-left: -24rem;
+    border-style: solid;
+    border-color: #fff transparent #fff transparent;
+    border-width: 11rem 22rem 7rem 22rem;
+}
+
+#hero.punisher main div:nth-child(4) {
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 24rem;
+    height: 9rem;
+    left: 50%;
+    bottom: 88rem;
+    margin-left: -12rem;
+}
+
+#hero.punisher main div:nth-child(4):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    height: 18rem;
+    top: 9rem;
+    left: 50%;
+    margin-left: -10rem;
+    border-style: solid;
+    border-color: transparent #fff transparent #fff;
+    border-width: 0 4rem 0 4rem;
+}
+
+#hero.punisher main div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 8rem;
+    height: 20rem;
+    top: 9rem;
+    left: 50%;
+    margin-left: -4rem;
+    border-style: solid;
+    border-color: transparent #fff transparent #fff;
+    border-width: 0 3rem 0 3rem;
+}
+
+#hero.punisher main div:nth-child(5):before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 10rem;
+    left: 50%;
+    bottom: 93rem;
+    margin-left: -5rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 4rem 10rem 4rem;
+}
+
+#hero.punisher main div:nth-child(5):after {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    width: 4rem;
+    bottom: 93rem;
+    left: 50%;
+    margin-left: -2rem;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 2rem 20rem 2rem;
+}
